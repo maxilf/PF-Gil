@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Amapola</title>
 
     <!-- LOGO CON FLAVICON -->
@@ -13,26 +14,30 @@
 
 </head>
 <body>
-    <header>
+    <header id="cabecera">
         <!-- IMAGEN LOGO DIETETICA (CONVERTICO)-->
-        <img src="./assets/img/Captura.PNG" alt="">
+        <div class="logo">
+            <img id="imagen principal" src="./assets/img/Captura.PNG" alt="">
+        </div>
 
         <!-- ENLACES A DEMAS HTML -->
-        <ul>
-            <li>
-                <a href="./pages/categorias.html">Categorias</a>
-            </li>
-            <li>
-                <a href="./pages/comprar.html">Comprar</a>
-            </li>
-            <li>
-                <a href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li>
-                <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
-            </li>
-            
-        </ul>
+        <nav id="navegador">
+            <ul>
+                <li class="lista">
+                    <a href="./pages/categorias.html">Categorias</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/comprar.html">Comprar</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
 
 
         <!-- BUSCADOR -->
@@ -40,55 +45,58 @@
         <h1>Dietetica Amapola</h1>
 
         <!-- BOTON DE INGRESAR -->
-        <button style="background-color: coral;">INGRESAR</button>
+        <button class="boton" >INGRESAR</button>
 
 
+     
     </header>
+    <br><br><br>  
+    <main>
+        <section>
+            <h4>NUEVO Horario Lunes a Viernes de 9.30 hs a 13 hs y de 17 hs a 21 hs</h4>
 
-    <section>
-        <h4>NUEVO Horario Lunes a Viernes de 9.30 hs a 13 hs y de 17 hs a 21 hs</h4>
+            <div>
+                <img src="./assets/img/fondo frutos secos.jpg" alt="imagen fondo frutos secos">
+            </div>
 
-        <div>
-            <!-- SCROLL -->
-        </div>
+        </section>
 
-    </section>
+        <article>
+            <h2>
+                Mejorá tu calidad de vida a través de la alimentación
+            </h2>
 
-    <article>
-        <h2>
-            Mejorá tu calidad de vida a través de la alimentación
-        </h2>
+            <h4>Nuestra misión es poner al alcance de nuestros clientes, vecinos de Las Flores, los mejores productos de la zona, artesanales, sin agregados, ni conservantes, y en lo posible organicos.</h4>
 
-        <h4>Nuestra misión es poner al alcance de nuestros clientes, vecinos de Las Flores, los mejores productos de la zona, artesanales, sin agregados, ni conservantes, y en lo posible organicos.</h4>
-
-    </article>
-    <!-- CARDS -->
-    <section>
-        <!-- CARD 1 -->
-        <div>
-            <img src="" alt="">
-            <div>    
-                <h3></h3>          
-                <p></p>
-            </div>    
-        </div>
-        <!-- CARD 2 -->
-        <div>
-            <img src="" alt="">
-            <div>    
-                <h3></h3>          
-                <p></p>
-            </div>    
-        </div>
-        <!-- CARD 3 -->
-        <div>
-            <img src="" alt="">
-            <div>    
-                <h3></h3>          
-                <p></p>
-            </div>    
-        </div>
-    </section>
+        </article>
+        <!-- CARDS -->
+        <section>
+            <!-- CARD 1 -->
+            <div>
+                <img src="./assets/img/almendra non pareli.jpg" alt="">
+                <div>    
+                    <h3></h3>          
+                    <p></p>
+                </div>    
+            </div>
+            <!-- CARD 2 -->
+            <div>
+                <img src="./assets/img/budin integral.jpg" alt="">
+                <div>    
+                    <h3></h3>          
+                    <p></p>
+                </div>    
+            </div>
+            <!-- CARD 3 -->
+            <div>
+                <img src="./assets/img/granola.jpg" alt="">
+                <div>    
+                    <h3></h3>          
+                    <p></p>
+                </div>    
+            </div>
+        </section>
+    </main>
 
     <footer>
         <!-- IMAGEN LOGO DIETETICA -->

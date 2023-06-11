@@ -1,0 +1,38 @@
+
+/* ESTILO PARA EL HEADER */
+
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 10px;
+    height: 10px;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+
+}
+
+.lista li a{
+    display: inline-block;
+}
+
+h1{
+    display: block;
+    color: yellow;
+}
+
+.boton{
+    border-radius: 15px;
+    background-color: #e8871eff;
+    font-weight: bold;
+    border-color: black;
+    border: 2px solid;
+    height: 25px;
+}
