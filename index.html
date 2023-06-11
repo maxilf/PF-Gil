@@ -8,7 +8,7 @@
     <title>Amapola</title>
 
     <!-- LOGO CON FLAVICON -->
-    <link rel="icon" href="./assets/img/Captura.ico">
+    <link rel="icon" href="./assets/img/fotor_2023-6-11_12_23_36 (2).ico">
 
     <!-- AGREGO ESTE COMENTARIO PARA PRACTICAR GIT -->
 
@@ -16,8 +16,8 @@
 <body>
     <header id="cabecera">
         <!-- IMAGEN LOGO DIETETICA (CONVERTICO)-->
-        <div class="logo">
-            <img id="imagen principal" src="./assets/img/Captura.PNG" alt="">
+        <div>
+            <img  class="logo" id="imagen principal" src="./assets/img/fotor_2023-6-11_12_23_36.png" alt="">
         </div>
 
         <!-- ENLACES A DEMAS HTML -->
@@ -42,7 +42,7 @@
 
         <!-- BUSCADOR -->
 
-        <h1>Dietetica Amapola</h1>
+        
 
         <!-- BOTON DE INGRESAR -->
         <button class="boton" >INGRESAR</button>
@@ -50,13 +50,15 @@
 
      
     </header>
-    <br><br><br>  
+    
     <main>
+        <h1>Dietetica Amapola</h1>
+        
         <section>
             <h4>NUEVO Horario Lunes a Viernes de 9.30 hs a 13 hs y de 17 hs a 21 hs</h4>
 
             <div>
-                <img src="./assets/img/fondo frutos secos.jpg" alt="imagen fondo frutos secos">
+                <img class="scroll" src="./assets/img/frutos secos 2.jpg" alt="imagen fondo frutos secos">
             </div>
 
         </section>
@@ -70,29 +72,29 @@
 
         </article>
         <!-- CARDS -->
-        <section>
+        <section id="cards">
             <!-- CARD 1 -->
-            <div>
+            <div class="card">
                 <img src="./assets/img/almendra non pareli.jpg" alt="">
-                <div>    
-                    <h3></h3>          
-                    <p></p>
+                <div class="card-texto">    
+                    <h3>Almendra non pareli</h3>          
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sequi, suscipit.</p>
                 </div>    
             </div>
             <!-- CARD 2 -->
-            <div>
+            <div class="card">
                 <img src="./assets/img/budin integral.jpg" alt="">
-                <div>    
-                    <h3></h3>          
-                    <p></p>
+                <div class="card-texto">    
+                    <h3>Budin Integral</h3>          
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam autem ea consequatur minus.</p>
                 </div>    
             </div>
             <!-- CARD 3 -->
-            <div>
+            <div class="card">
                 <img src="./assets/img/granola.jpg" alt="">
-                <div>    
-                    <h3></h3>          
-                    <p></p>
+                <div class="card-texto">    
+                    <h3>Granola</h3>          
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis libero unde eligendi vel voluptates amet, porro recusandae, facere iusto ipsam fugit possimus.</p>
                 </div>    
             </div>
         </section>
@@ -100,13 +102,25 @@
 
     <footer>
         <!-- IMAGEN LOGO DIETETICA -->
-        <img src="./assets/img/Captura.PNG" alt="">
+        <img class="logo"  src="./assets/img/Captura.PNG" alt="">
 
         <!-- ENLACES A DEMAS HTML -->
-        <a href="./pages/categorias.html">Categorias</a>
-        <a href="./pages/comprar.html">Comprar</a>
-        <a href="./pages/contacto.html">Contacto</a>
-        <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+        <nav id="navegador">
+            <ul>
+                <li class="lista">
+                    <a href="./pages/categorias.html">Categorias</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/comprar.html">Comprar</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- ICONOS REDES SOCIALES -->
         <img src="" alt="">

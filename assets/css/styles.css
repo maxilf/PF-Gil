@@ -5,27 +5,48 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #ebf5dfff;
 
 }
 
 .logo{
-    width: 10px;
-    height: 10px;
+    width: 110px;
+    height: 110px;
+}
+
+#navegador ul{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+#navegador a{
+    list-style: none;
 }
 
 .lista{
-    display: flex;
     list-style: none;
-
+    text-decoration: none;
 }
 
-.lista li a{
-    display: inline-block;
+.lista a{
+    color: black;
+    text-decoration: none;
 }
+
+
+
 
 h1{
     display: block;
-    color: yellow;
+    color: black;
+    text-align: center;
+    background-color: #d4d4aaff;
+    margin: 0%;
+    height: 100px;
+        
+    
 }
 
 .boton{
@@ -35,4 +56,67 @@ h1{
     border-color: black;
     border: 2px solid;
     height: 25px;
+    margin-top: 20px;
+}
+
+section h4{
+    background-color: #edb458ff;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+section .scroll{
+    width: 100%;
+    height: auto;
+}
+
+/* ESTILO CARDS */
+
+#cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 220px; /* Ancho de la tarjeta */
+    border: 1px solid #bbb8b8;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card-texto {
+    margin-top: 10px;
+  }
+  
+  .card-texto h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card-texto p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .card-texto a {
+    display: inline-block;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+  }
+
+
+/* ESTILO DEL FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
 }
