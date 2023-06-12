@@ -1,24 +1,43 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    margin: 0px;
+}
+
+@font-face {
+    font-family: letrah1;
+    src: url(../fonts/Letra1.ttf);
+}
 
 /* ESTILO PARA EL HEADER */
+
 
 #cabecera{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #ebf5dfff;
-
+    background-color: #042a2bff;
+    border-bottom: 5px solid #bdd358ff;
+ 
 }
 
 .logo{
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
 }
 
 #navegador ul{
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 450px;
     justify-content: space-evenly;
+    margin-top: 15px;
+    padding: 0px;
+    
 }
 
 #navegador a{
@@ -31,21 +50,29 @@
 }
 
 .lista a{
-    color: black;
+    color:white;
     text-decoration: none;
 }
 
+.buscador input{
+    margin-top: 15px;
+}
 
+
+    
 
 
 h1{
     display: block;
     color: black;
     text-align: center;
-    background-color: #d4d4aaff;
+    background-color: #5B8C5A ;
     margin: 0%;
     height: 100px;
-        
+    position: sticky;
+    top: 1px;
+    font-family: letrah1; 
+    font-size: 50px;  
     
 }
 
@@ -56,8 +83,10 @@ h1{
     border-color: black;
     border: 2px solid;
     height: 25px;
-    margin-top: 20px;
+    margin-top: 13px;
+    margin-right: 15px;
 }
+
 
 section h4{
     background-color: #edb458ff;
@@ -71,15 +100,35 @@ section .scroll{
     height: auto;
 }
 
+/* ESTILO LEYENDA ARTICLE */
+
+article{
+    background-color: ;
+}
+
+article h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+article h4{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
 /* ESTILO CARDS */
 
 #cards{
     display: flex;
     justify-content: space-around;
+    height: auto;
 }
 
 .card {
-    width: 220px; /* Ancho de la tarjeta */
+    width: 250px;
+    height: autopx; 
     border: 1px solid #bbb8b8;
     border-radius: 5px;
     padding: 10px;
@@ -87,8 +136,8 @@ section .scroll{
   }
   
   .card img {
-    width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
   }
   
@@ -115,8 +164,40 @@ section .scroll{
 
 
 /* ESTILO DEL FOOTER */
-footer{
+footer .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: #042a2bff;
+    color: white;
+    border-bottom: 2px black solid;
+    border-top:  5px solid #bdd358ff;
 }
+
+footer #navegador{
+    padding: 5px;
+
+}
+
+footer .derechos{
+    background-color: #4B534B;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+footer .footer .iconos-redes{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+}
+

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Amapola</title>
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
     <!-- LOGO CON FLAVICON -->
     <link rel="icon" href="./assets/img/fotor_2023-6-11_12_23_36 (2).ico">
@@ -41,7 +46,10 @@
 
 
         <!-- BUSCADOR -->
-
+        <form class="buscador"  action="buscar" method="post">
+            <input type="text" name="buscar" placeholder="Buscar..." />
+            <button type="submit">Buscar</button>
+        </form>
         
 
         <!-- BOTON DE INGRESAR -->
@@ -68,7 +76,7 @@
                 Mejorá tu calidad de vida a través de la alimentación
             </h2>
 
-            <h4>Nuestra misión es poner al alcance de nuestros clientes, vecinos de Las Flores, los mejores productos de la zona, artesanales, sin agregados, ni conservantes, y en lo posible organicos.</h4>
+            <h4><span>Nuestra misión es poner al alcance de nuestros clientes,</span><br><span>vecinos de Las Flores, los mejores productos de la zona, <br><span> sin agregados, ni conservantes, y en lo posible organicos.</span><br><span>Siempre al mejor precio</span></h4>
 
         </article>
         <!-- CARDS -->
@@ -101,31 +109,40 @@
     </main>
 
     <footer>
-        <!-- IMAGEN LOGO DIETETICA -->
-        <img class="logo"  src="./assets/img/Captura.PNG" alt="">
+        <div class="footer">
+            <!-- IMAGEN LOGO DIETETICA -->
+            <img class="logo"  src="./assets/img/fotor_2023-6-11_12_23_36.png" alt="">
 
-        <!-- ENLACES A DEMAS HTML -->
-        <nav id="navegador">
-            <ul>
-                <li class="lista">
-                    <a href="./pages/categorias.html">Categorias</a>
-                </li>
-                <li class="lista">
-                    <a href="./pages/comprar.html">Comprar</a>
-                </li>
-                <li class="lista">
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="lista">
-                    <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
-                </li>
-            </ul>
-        </nav>
+            <!-- ENLACES A DEMAS HTML -->
+            <nav id="navegador">
+                <ul>
+                    <li class="lista">
+                        <a href="./pages/categorias.html">Categorias</a>
+                    </li>
+                    <li class="lista">
+                        <a href="./pages/comprar.html">Comprar</a>
+                    </li>
+                    <li class="lista">
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="lista">
+                        <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- ICONOS REDES SOCIALES -->
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+            <!-- ICONOS REDES SOCIALES -->
+            <div class="iconos-redes">
+                <img src="./assets/img/square-facebook.svg" alt="">
+                <img src="./assets/img/instagram.svg" alt="">
+                <img src="./assets/img/whatsapp.svg" alt="">
+            </div>
+
+        </div>
+        
+        <div class="derechos">
+            Todos los derechos Reservados Dietetica Amapola.
+        </div>
 
     </footer>
    
