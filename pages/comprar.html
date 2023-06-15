@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Amapola</title>
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- LOGO CON FLAVICON -->
+    <link rel="icon" href="../assets/img/fotor_2023-6-11_12_23_36 (2).ico">
+
+    <!-- AGREGO ESTE COMENTARIO PARA PRACTICAR GIT -->
+
+</head>
+<body>
+    <header id="cabecera">
+        <!-- IMAGEN LOGO DIETETICA (CONVERTICO)-->
+        <div>
+            <img  class="logo" id="imagen principal" src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="">
+        </div>
+
+        <!-- ENLACES A DEMAS HTML -->
+        <nav id="navegador">
+            <ul>
+                <li class="lista">
+                    <a href="./pages/categorias.html">Categorias</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/comprar.html">Comprar</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="lista">
+                    <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="buscador"  action="buscar" method="post">
+            <input type="text" name="buscar" placeholder="Buscar..." />
+            <button type="submit">Buscar</button>
+        </form>
+       
+
+        <!-- BOTON DE VOLVER -->
+        <button class="boton" >VOLVER</button>
+
+
+    
+    </header>
+    
+    <div>
+        <div class="filtro">
+            <label for="filtro">Filtrar..</label>  
+            <select name="filtro" id="filtro">  
+                <option value="N/C">Veganos</option>
+                <option value="N/C">Celiacos</option>
+                <option value="N/C">Diabeticos</option>
+                <option value="N/C">Deportistas</option>
+                <option value="N/C">Keto</option>
+            </select>
+        </div>
+        
+        <!-- TARJETAS PRODUCTOS -->
+        <div class="card-madre"></div>    
+            <div class="card">
+                <img src="" alt="Imagen">
+                <div class="card-contenido">
+                <h2>Título de la tarjeta</h2>
+                <p>Texto descriptivo de la tarjeta.</p>
+                <a href="">Enlace</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="Imagen">
+                <div class="card-contenido">
+                <h2>Título de la tarjeta</h2>
+                <p>Texto descriptivo de la tarjeta.</p>
+                <a href="">Enlace</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="" alt="Imagen">
+                <div class="card-contenido">
+                <h2>Título de la tarjeta</h2>
+                <p>Texto descriptivo de la tarjeta.</p>
+                <a href="">Enlace</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="" alt="Imagen">
+                <div class="card-contenido">
+                <h2>Título de la tarjeta</h2>
+                <p>Texto descriptivo de la tarjeta.</p>
+                <a href="">Enlace</a>
+                </div>
+            </div> 
+        </div>     
+      
+            
+    </main>
+
+    <footer>
+        <div class="footer">
+            <!-- IMAGEN LOGO DIETETICA -->
+            <img class="logo"  src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="">
+
+            <!-- ENLACES A DEMAS HTML -->
+            <nav id="navegador">
+                <ul>
+                    <li class="lista">
+                        <a href="./pages/categorias.html">Categorias</a>
+                    </li>
+                    <li class="lista">
+                        <a href="./pages/comprar.html">Comprar</a>
+                    </li>
+                    <li class="lista">
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="lista">
+                        <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ICONOS REDES SOCIALES -->
+            <div class="iconos-redes">
+                <img src="../assets/img/square-facebook.svg" alt="">
+                <img src="../assets/img/instagram.svg" alt="">
+                <img src="../assets/img/whatsapp.svg" alt="">
+            </div>
+
+        </div>
+        
+        <div class="derechos">
+            Todos los derechos Reservados Dietetica Amapola.
+        </div>
+
+    </footer>
+   
+    
+</body>
+</html>

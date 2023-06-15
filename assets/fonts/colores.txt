@@ -4,3 +4,12 @@
 --vanilla: #d4d4aaff;
 --hunyadi-yellow: #edb458ff;
 --fulvous: #e8871eff;
+--dark-green: #042a2bff;
+--sea green: #5B8C5A
+
+
+--straw: #e5e059ff;
+--yellow-green: #bdd358ff;
+--white: #ffffffff;
+--rich-black: #071e22ff;
+--tropical-indigo: #9b7edeff;

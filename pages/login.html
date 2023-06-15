@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Contacto</title>
+    <title>Amapola</title>
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- LOGO CON FLAVICON -->
+    <link rel="icon" href="../assets/img/fotor_2023-6-11_12_23_36 (2).ico">
+
+    <!-- AGREGO ESTE COMENTARIO PARA PRACTICAR GIT -->
+
 </head>
 <body>
     <header id="cabecera">
@@ -24,62 +35,43 @@
                     <a href="./comprar.html">Comprar</a>
                 </li>
                 <li class="lista">
-                    <a href="./comprar.html">Contacto</a>
+                    <a href="./contacto.html">Contacto</a>
                 </li>
                 <li class="lista">
                     <a href="./sobre_nosotros.html">Sobre nosotros</a>
                 </li>
             </ul>
         </nav>
-       
+     
 
         <!-- BOTON DE VOLVER -->
         <button class="boton" >VOLVER</button>
      
     </header>
-
-
+    
     <main>
-        <h3 id="tituloContacto">Por favor completa los datos y te contactaremos a la brevedad</h3>
-
+        
         <form action="procesar_formulario.php" method="post" enctype="text/plain">
             <fieldset>
-                <legend>Datos Personales</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+                <legend>Iniciar sesion</legend>
+                <label for="nombre">Usuario:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Usuario"><br><br>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required><br><br>
+                <label for="apellido">Clave:</label>
+                <input type="text" id="apellido" name="apellido" required placeholder="Clave"><br><br>
+                <div>
+                    <label for="recordar">Recordar Usuario y Clave</label>
+                    <input type="checkbox" name="recordar" id="recordar">
+                </div>
 
-                <label for="mail">Mail:</label>
-                <input type="email" id="mail" name="mail" required><br><br>
+                <button class="boton" >INGRESAR</button>
+                
+                <p class="recuperar">Recuperar Usuario o Clave</p>
             </fieldset>         
-
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="8" cols="50" required></textarea><br><br>
-
-            <label for="genero">Género</label>
-            <div>Masculino</div>
-            <input type="radio" name="genero" value="M">
-            <div>Femenino</div>
-            <input type="radio" name="genero" value="F">
-            <div>No Binario</div>
-            <input type="radio" name="genero" value="NB"><br><br>
-
-            <label for="pais">Selecciona un país:</label>  
-            <select name="pais" id="pais">
-                <option value="N/C">Seleccionar..</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Brazil">Brazil</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Ecuador">Ecuador</option>     
-            </select><br><br>   
-            
-            <button class="enviar">Enviar</button>
-                        
         </form>
-    </main>    
-    
+
+    </main>
+
     <footer>
         <div class="footer">
             <!-- IMAGEN LOGO DIETETICA -->
@@ -117,5 +109,7 @@
         </div>
 
     </footer>
+   
+    
 </body>
 </html>
