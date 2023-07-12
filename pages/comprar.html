@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Amapola</title>
     <!-- LINK GOOGLE FONT -->
@@ -19,42 +22,43 @@
 
 </head>
 <body>
-    <header id="cabecera">
-        <!-- IMAGEN LOGO DIETETICA (CONVERTICO)-->
-        <div>
-            <img  class="logo" id="imagen principal" src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="">
-        </div>
+<!-- HEADER CON BOOTSTRAP -->
 
-        <!-- ENLACES A DEMAS HTML -->
-        <nav id="navegador">
-            <ul>
-                <li class="lista">
-                    <a href="./pages/categorias.html">Categorias</a>
-                </li>
-                <li class="lista">
-                    <a href="./pages/comprar.html">Comprar</a>
-                </li>
-                <li class="lista">
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li class="lista">
-                    <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
-                </li>
+<header id="cabecera">
+    <!-- IMAGEN LOGO DIETETICA (CONVERTICO)-->
+    <div>
+        <img src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="">
+    </div>
+    <!-- ENLACES A DEMAS HTML -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary.bg-white d-flex justify-content-center align-items-start w-60">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./login.html">Login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comprar.html">Comprar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+              </li>
             </ul>
-        </nav>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- BOTON DE VOLVER -->
+      <button class="boton">INGRESAR</button>
 
-        <form class="buscador"  action="buscar" method="post">
-            <input type="text" name="buscar" placeholder="Buscar..." />
-            <button type="submit">Buscar</button>
-        </form>
-       
-
-        <!-- BOTON DE VOLVER -->
-        <button class="boton" >VOLVER</button>
-
-
-    
-    </header>
+</header>
     
     <div>
         <div class="filtro">
@@ -117,16 +121,16 @@
             <nav id="navegador">
                 <ul>
                     <li class="lista">
-                        <a href="./pages/categorias.html">Categorias</a>
+                        <a href="./login.html">Login</a>
                     </li>
                     <li class="lista">
-                        <a href="./pages/comprar.html">Comprar</a>
+                        <a href="./comprar.html">Comprar</a>
                     </li>
                     <li class="lista">
-                        <a href="./pages/contacto.html">Contacto</a>
+                        <a href="./contacto.html">Contacto</a>
                     </li>
                     <li class="lista">
-                        <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                        <a href="./sobre_nosotros.html">Sobre nosotros</a>
                     </li>
                 </ul>
             </nav>
@@ -146,6 +150,6 @@
 
     </footer>
    
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

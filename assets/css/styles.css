@@ -19,8 +19,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(7, 97, 100);
-    border-bottom: 5px solid #bdd358ff;
+    background-color: white;
+    border-bottom: 5px #bdd358ff;
  
 }
 
@@ -57,9 +57,33 @@ body{
 .buscador input{
     margin-top: 15px;
 }
+/* ESTILO PARA HEADER CON BOOTSTRAP */
 
-
+a.nav-link {
+    color: black;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    text-decoration: none;
+    background-color:white;
+    border: 0;
     
+}
+
+
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.scroll{
+    width: auto;
+}
+
 
 
 h1{
@@ -69,11 +93,12 @@ h1{
     background-color: #5B8C5A ;
     margin: 0%;
     height: 100px;
-    position: sticky;
+    /* position: sticky; */
     top: 1px;
     font-family: letrah1; 
     font-weight: lighter;
     font-size: 50px;  
+    padding-top: 15px;
     
 }
 
@@ -96,10 +121,10 @@ section h4{
     margin-bottom: 0%;
 }
 
-section .scroll{
+/* section .scroll{
     width: 100%;
     height: auto;
-}
+} */
 
 /* ESTILO LEYENDA ARTICLE */
 
@@ -113,6 +138,7 @@ article h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     margin-top: 0%;
+    padding-top: 15px;
 }
 
 article h4{
@@ -128,6 +154,7 @@ article h4{
     display: flex;
     justify-content: space-around;
     height: auto;
+    margin: 20px;
 }
 
 .card {
@@ -135,12 +162,12 @@ article h4{
     height: autopx; 
     border: 1px solid #bbb8b8;
     border-radius: 5px;
-    padding: 10px;
+    padding-top: 15px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
   }
   
   .card img {
-    width: 250px;
+    width: 245px;
     height: 250px;
     border-radius: 5px;
   }
@@ -152,11 +179,13 @@ article h4{
   .card-texto h3 {
     font-size: 18px;
     margin: 0;
+    padding: 5px;
   }
   
   .card-texto p {
     font-size: 14px;
-    margin: 5px 0;
+    margin: 5px 0px;
+    padding: 5px;
   }
   
   .card-texto a {
@@ -172,7 +201,6 @@ footer .footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 25px;
     margin-bottom: 0px;
     padding: 10px;
     background-color: #042a2bff;
@@ -186,6 +214,7 @@ footer #navegador{
 
 }
 
+
 footer .derechos{
     background-color: #4B534B;
     font-weight: bold;
@@ -196,8 +225,8 @@ footer .derechos{
 }
 
 footer .footer .iconos-redes{
-    width: 120px;
-    height: 30px;
+    width: 160px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -281,8 +310,9 @@ footer{
     grid-template-rows: 250px 500px 200px;
     grid-template-columns: 1fr 1fr 1fr;
     
-    
 }
+
+
 
 #cabecera {
     grid-area: cabecera;
@@ -326,9 +356,12 @@ footer {
     grid-area: footer;
     border: 2px solid black;
     align-items: flex-end;
-    
-        
-   
+           
+}
+
+.nav-link {
+
+    color: #ffffff;
 }
 
 
