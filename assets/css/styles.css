@@ -1,10 +1,13 @@
 html{
     font-family: 'Roboto', sans-serif;
+    
 }
-
 
 body{
     margin: 0px;
+    height: auto;
+    padding: 0%;
+    
 }
 
 @font-face {
@@ -19,9 +22,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: white;
     border-bottom: 5px #bdd358ff;
- 
 }
 
 .logo{
@@ -37,7 +38,6 @@ body{
     justify-content: space-evenly;
     margin-top: 15px;
     padding: 0px;
-    
 }
 
 #navegador a{
@@ -73,8 +73,6 @@ a.nav-link {
     
 }
 
-
-
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
     padding-top: 0%;
     padding-bottom: 0%;
@@ -83,7 +81,6 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .scroll{
     width: auto;
 }
-
 
 
 h1{
@@ -121,10 +118,6 @@ section h4{
     margin-bottom: 0%;
 }
 
-/* section .scroll{
-    width: 100%;
-    height: auto;
-} */
 
 /* ESTILO LEYENDA ARTICLE */
 
@@ -145,10 +138,23 @@ article h4{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     width: 100;
+        
+}
+
+/* ESTILO CARDS COMPRAR.HTML*/
+
+#tarjetas{
+    background-color: #5B8C5A;
     
 }
 
-/* ESTILO CARDS */
+.filtro{
+    border-radius: 3px;
+    padding-top: 3px;
+    background-color: #bad4aaff;
+    width: 180px;
+    position: absolute;
+}
 
 #cards{
     display: flex;
@@ -159,21 +165,25 @@ article h4{
 
 .card {
     width: 250px;
-    height: autopx; 
+    height: auto; 
     border: 1px solid #bbb8b8;
     border-radius: 5px;
     padding-top: 15px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: #d4d4aaff;
   }
   
   .card img {
-    width: 245px;
-    height: 250px;
+    width: auto;
+    height: 235px;
     border-radius: 5px;
+    align-items: center;
   }
   
   .card-texto {
     margin-top: 10px;
+    width: auto;
   }
   
   .card-texto h3 {
@@ -195,18 +205,27 @@ article h4{
     text-decoration: none;
   }
 
+/* CARDS DE INDEX.HTML */
+
+.cards-index {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 
 /* ESTILO DEL FOOTER */
 footer .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 0px;
     padding: 10px;
     background-color: #042a2bff;
     color: white;
     border-bottom: 2px black solid;
     border-top:  5px solid #bdd358ff;
+    
+    
 }
 
 footer #navegador{
@@ -225,16 +244,35 @@ footer .derechos{
 }
 
 footer .footer .iconos-redes{
-    width: 160px;
+    width: 50px;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: white;
     padding: 10px;
+    
 }
 
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.redes-icono {
+    max-width: 30px;
+    height: auto;
+    margin: 0 5px;
+  }
+
 /* ESTILO A DEMAS HTML */
+
+/* LOGIN */
+
+.main.login{
+    height: 1000px;
+}
 
 /* CONTACTO */
 #tituloContacto{
@@ -250,6 +288,7 @@ footer .footer .iconos-redes{
 
 .recuperar{
     color: blue;
+    margin-top: 10px;
 }
 
 .enviar{
@@ -259,48 +298,6 @@ footer .footer .iconos-redes{
 }
 
 /* SOBRE NOSOTROS */
-/* #sobre-nosotros-grilla{
-    display: grid;
-    grid-template-areas: 
-        "cabecera cabecera cabecera cabecera"
-        "seccion1 seccion1 seccion1 seccion1"
-        "seccion2 seccion2 seccion2 seccion2"
-        "footer footer footer footer"; 
-    grid-template-rows: 250px 350px 350px 250px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: auto;
-    width: 1000px;
-}    
-
-#cabecera{
-    grid-area: cabecera;
-    border: 2px solid black;
-}
-
-.main-sobre #seccion1{
-    grid-area: seccion1;
-    display: flex;
-    flex-direction: row;
-    border: 2px solid black;
-}
-
-#seccion1 p{
-    width: 300px;
-
-}
-
-.main-sobre #seccion2{
-    grid-area: seccion2;
-    display: flex;
-    flex-direction: row-reverse;
-    border: 2px solid black;
-}
-
-footer{
-    grid-area: footer;
-    border: 2px solid black;
-} */
-/* SOBRE NOSOTROS */
 #sobre-nosotros-grilla {
     display: grid;
     grid-template-areas:
@@ -309,20 +306,17 @@ footer{
         "footer footer footer";
     grid-template-rows: 250px 500px 200px;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
-
-
 
 #cabecera {
     grid-area: cabecera;
     border: 2px solid black;
 }
 
-
 main{
     grid-area: main;
 }
+
 .main-sobre #seccion1 {
     display: flex;
     flex-direction: row;
@@ -345,7 +339,6 @@ main{
     flex-direction: row-reverse;
     border: 2px solid black;
     justify-content: center;
-
 }
 
 #seccion2 p{
@@ -356,33 +349,12 @@ footer {
     grid-area: footer;
     border: 2px solid black;
     align-items: flex-end;
-           
 }
 
 .nav-link {
 
     color: #ffffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* COMPRAR */
@@ -439,4 +411,48 @@ footer{
     grid-area: footer;
     
 }   
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 665px) {
+    #navegador a {
+      font-size: 12px; 
+      padding: 1px 5px; 
+    }
+
+    #navegador ul{
+        width: 100px;
+    }
+    .footer{
+        justify-content: space-around;
+    }
+    .logo-principal{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    #cards {
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+    
+    .card-index {
+        width: 70%; 
+    }
+    
+}
+
+
+  
+  
+
+@media (min-width: 665px) and (max-width: 920px) {
+    .footer{
+        align-items: center;
+    }
+}
+        
+  
 

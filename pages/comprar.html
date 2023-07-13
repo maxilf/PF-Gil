@@ -27,7 +27,7 @@
 <header id="cabecera">
     <!-- IMAGEN LOGO DIETETICA (CONVERTICO)-->
     <div>
-        <img src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="">
+        <img src="../assets/img/fotor_2023-6-11_12_23_36.png" class="logo-principal" alt="">
     </div>
     <!-- ENLACES A DEMAS HTML -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary.bg-white d-flex justify-content-center align-items-start w-60">
@@ -59,55 +59,61 @@
       <button class="boton">INGRESAR</button>
 
 </header>
-    
-    <div>
-        <div class="filtro">
-            <label for="filtro">Filtrar..</label>  
-            <select name="filtro" id="filtro">  
-                <option value="N/C">Veganos</option>
-                <option value="N/C">Celiacos</option>
-                <option value="N/C">Diabeticos</option>
-                <option value="N/C">Deportistas</option>
-                <option value="N/C">Keto</option>
-            </select>
-        </div>
-        
-        <!-- TARJETAS PRODUCTOS -->
-        <div class="card-madre"></div>    
-            <div class="card">
-                <img src="" alt="Imagen">
-                <div class="card-contenido">
-                <h2>Título de la tarjeta</h2>
-                <p>Texto descriptivo de la tarjeta.</p>
-                <a href="">Enlace</a>
+    <main>
+        <div id="tarjetas" class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+                    <label for="filtro">Filtrar..</label>  
+                    <select name="filtro" id="filtro">  
+                        <option value="N/C">Veganos</option>
+                        <option value="N/C">Celiacos</option>
+                        <option value="N/C">Diabeticos</option>
+                        <option value="N/C">Deportistas</option>
+                        <option value="N/C">Keto</option>
+                    </select>
                 </div>
             </div>
-            <div class="card">
-                <img src="" alt="Imagen">
-                <div class="card-contenido">
-                <h2>Título de la tarjeta</h2>
-                <p>Texto descriptivo de la tarjeta.</p>
-                <a href="">Enlace</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="Imagen">
-                <div class="card-contenido">
-                <h2>Título de la tarjeta</h2>
-                <p>Texto descriptivo de la tarjeta.</p>
-                <a href="">Enlace</a>
-                </div>
-            </div>
+
             
-            <div class="card">
-                <img src="" alt="Imagen">
-                <div class="card-contenido">
-                <h2>Título de la tarjeta</h2>
-                <p>Texto descriptivo de la tarjeta.</p>
-                <a href="">Enlace</a>
-                </div>
+            <!-- TARJETAS PRODUCTOS -->
+            <div class="card-madre container-fluid" id="cards"></div>  
+                <div class="row h-100 d-flex justify-content-center">
+                    <div class="col-md-6 col-lg-3 card">
+                        <img src="../assets/img/la tranquilina.jpg" alt="Imagen">
+                        <div class="card-contenido">
+                        <h2>Mermelada La Tranquilina</h2>
+                        <p>Texto descriptivo de la tarjeta.</p>
+                        <a href="">Agregar al carrito</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 card">
+                        <img src="../assets/img/mani king.jpg" alt="Imagen">
+                        <div class="card-contenido">
+                        <h2>Pasta de mani King</h2>
+                        <p>Texto descriptivo de la tarjeta.</p>
+                        <a href="">Agregar al carrito</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 card">
+                        <img src="../assets/img/risky-dit.png" alt="Imagen">
+                        <div class="card-contenido">
+                        <h2>Galletas de arroz Risky-Dit</h2>
+                        <p>Texto descriptivo de la tarjeta.</p>
+                        <a href="">Agregar al carrito</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3 card">
+                        <img src="../assets/img/not chicken.png" alt="Imagen">
+                        <div class="card-contenido">
+                        <h2>Not chicken</h2>
+                        <p>Texto descriptivo de la tarjeta.</p>
+                        <a href="">Agregar al carrito</a>
+                    </div>
             </div> 
         </div>     
+             
+ 
       
             
     </main>
@@ -137,9 +143,9 @@
 
             <!-- ICONOS REDES SOCIALES -->
             <div class="iconos-redes">
-                <img src="../assets/img/square-facebook.svg" alt="">
-                <img src="../assets/img/instagram.svg" alt="">
-                <img src="../assets/img/whatsapp.svg" alt="">
+                <img src="../assets/img/square-facebook.svg" class="redes-icono" alt="">
+                <img src="../assets/img/instagram.svg" class="redes-icono" alt="">
+                <img src="../assets/img/whatsapp.svg" class="redes-icono" alt="">
             </div>
 
         </div>
