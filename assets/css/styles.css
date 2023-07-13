@@ -365,9 +365,6 @@ main{
     
 }
 
-.familia-amapola{
-
-}
 
 .main-sobre{
     height: 600px;
@@ -458,8 +455,8 @@ footer{
         justify-content: space-around;
     }
     .logo-principal{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         padding: 10px;
     }
     #cards {
