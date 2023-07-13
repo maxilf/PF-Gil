@@ -304,7 +304,7 @@ footer .footer .iconos-redes{
         "cabecera cabecera cabecera"
         "main main main"
         "footer footer footer";
-    grid-template-rows: 250px 500px 200px;
+    grid-template-rows: 200px 1600px 120px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -317,16 +317,55 @@ main{
     grid-area: main;
 }
 
-.main-sobre #seccion1 {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid black;
-    justify-content: center;
+.main-sobre{
+    height: 1200px;
 }
 
-#seccion1 p {
-    width: 300px;
-    padding-right: 100px;
+.main-sobre #nosotros-primero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #ebf5dfff;
+}
+.main-sobre #nosotros-segundo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ebf5dfff;
+}
+
+#nosotros-primero p {
+    width: 700px;
+    padding-right: 20px;
+    text-align: justify;
+    font-size: 20px;
+
+}
+#nosotros-segundo p {
+    width: 700px;
+    padding-left: 30px;
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+#imagen1{
+    border: 2px solid #5B8C5A;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#imagen2{
+    border: 2px solid #5B8C5A;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    
+}
+
+.familia-amapola{
 
 }
 
@@ -334,25 +373,16 @@ main{
     height: 600px;
 }
 
-.main-sobre #seccion2 {
-    display: flex;
-    flex-direction: row-reverse;
-    border: 2px solid black;
-    justify-content: center;
-}
-
-#seccion2 p{
-    padding-left: 100px;
-}
-
 footer {
     grid-area: footer;
     border: 2px solid black;
     align-items: flex-end;
+    position: relative;
+    margin-bottom: 0px;
+        
 }
 
 .nav-link {
-
     color: #ffffff;
 }
 
