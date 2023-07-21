@@ -1,3 +1,9 @@
-h1{
-    color: red;
-}
+@import "./modules/variables";
+@import "./modules/resets";
+@import "./modules/index";
+@import "./modules/contacto";
+@import "./modules/comprar";
+@import "./modules/sobre_nosotros";
+@import "./modules/login";
+
+

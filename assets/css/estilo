@@ -18,7 +18,7 @@ body{
 /* ESTILO PARA EL HEADER */
 
 
-#cabecera{
+/* #cabecera{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,9 +29,14 @@ body{
     width: 100px;
     height: 100px;
     padding: 15px;
+
 }
 
-#navegador ul{
+.logo-principal:hover{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+} */
+
+/* #navegador ul{
     display: flex;
     flex-direction: row;
     width: 450px;
@@ -42,9 +47,9 @@ body{
 
 #navegador a{
     list-style: none;
-}
+} */
 
-.lista{
+/* .lista{
     list-style: none;
     text-decoration: none;
 }
@@ -52,7 +57,7 @@ body{
 .lista a{
     color:white;
     text-decoration: none;
-}
+} */
 
 .buscador input{
     margin-top: 15px;
@@ -62,7 +67,7 @@ body{
 a.nav-link {
     color: black;
 }
-.nav-link {
+/* .nav-link {
     display: block;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
@@ -71,7 +76,7 @@ a.nav-link {
     background-color:white;
     border: 0;
     
-}
+} */
 
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
     padding-top: 0%;
@@ -83,7 +88,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 }
 
 
-h1{
+/* h1{
     display: block;
     color: #333333;
     text-align: center;
@@ -95,7 +100,8 @@ h1{
     font-weight: lighter;
     font-size: 50px;  
     padding-top: 20px;
-    transition: 3s;
+    transition: 3s; */
+
     /* animation-name: efecto_h1;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -113,7 +119,7 @@ h1{
     animation-duration: 3s;
     animation-delay: 1s;
 } */
-
+/* VER SI ESTA BIEN COMPILADO */
 h1:hover{
     height: 150px;
     font-size: 75px;
@@ -131,7 +137,7 @@ h1:hover{
         font-size: 70px;}
 } */
 
-.boton{
+/* .boton{
     border-radius: 15px;
     background-color: #e8871eff;
     font-weight: lighter;
@@ -146,8 +152,9 @@ h1:hover{
     font-size: 12px;
     align-items: center;
     transition: all 1s;
-}
+} */
 
+/* VER PORQUE NO COMPILA */
 .boton:hover{
     transform: scale(1.1);
     background-color: #5B8C5A;
@@ -157,7 +164,7 @@ h1:hover{
         
 }
 
-
+/* 
 section h4{
     background-color: #edb458ff;
     text-align: center;
@@ -166,7 +173,7 @@ section h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 /* ESTILO CAROUSEL */
 
@@ -210,7 +217,10 @@ article h4{
     background-color: #bad4aaff;
     width: 180px;
     position: absolute;
+    position: relative;
+    left: 850px;
 }
+
 
 #cards{
     display: flex;
@@ -341,9 +351,45 @@ footer .footer .iconos-redes{
     font-family: sans-serif; 
     font-size: 20px; 
     background-color: white;
+    display: flex;
+    justify-content: center;
 }
 
+.formulario{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  
+    /* Imagen de fondo para el formulario */
+    background-image: url('../img/fondo\ formulario.jpg');
+    background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; 
+}
 
+.letra-formulario{
+    font-weight: 900;
+}
+
+.enviar{
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: gray;
+    font-weight: bold;
+    color: black;
+    border-color: black;
+    border: 2px solid;
+    height: 25px;
+    height: auto;
+}
+
+/* LOGIN */
 .pLogin{
     background-color: aqua;
 }
@@ -353,11 +399,7 @@ footer .footer .iconos-redes{
     margin-top: 10px;
 }
 
-.enviar{
-    position: relative;
-    left: 35px;
-    
-}
+
 
 /* SOBRE NOSOTROS */
 #sobre-nosotros-grilla {
@@ -366,7 +408,7 @@ footer .footer .iconos-redes{
         "cabecera cabecera cabecera"
         "main main main"
         "footer footer footer";
-    grid-template-rows: 200px 1600px 120px;
+    grid-template-rows: 200px 1150px 120px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -380,7 +422,11 @@ main{
 }
 
 .main-sobre{
-    height: 1200px;
+    /* Imagen de fondo para el formulario */
+    background-image: url('../img/fondo\ sobre\ nosotros\ 3.jpg');
+    background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; 
 }
 
 .main-sobre #nosotros-primero {
@@ -388,7 +434,7 @@ main{
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
-    background-color: #ebf5dfff;
+
 }
 .main-sobre #nosotros-segundo {
     display: flex;
@@ -414,13 +460,16 @@ main{
 
 }
 
-#imagen1{
+.familia-amapola{
+    height: auto;
+    display: block;
     border: 2px solid #5B8C5A;
     border-radius: 10px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #imagen2{
+    height: auto;
     border: 2px solid #5B8C5A;
     border-radius: 10px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -446,14 +495,8 @@ footer {
 }
 
 
-/* COMPRAR */
+  
 
-.filtro{
-    position: relative;
-    left: 850px;
-}
-    
-/* 
 /* PRACTICA GRIDS */
 
 #grilla{
