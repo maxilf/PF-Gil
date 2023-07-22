@@ -1,0 +1,91 @@
+#sobre-nosotros-grilla {
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "main main main"
+        "footer footer footer";
+    grid-template-rows: 130px 1250px 120px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    #cabecera{
+        grid-area: cabecera;
+        border: 2px solid black;
+    }
+
+    .main-sobre{
+        grid-area: main;
+        background-image: url('../img/fondo\ sobre\ nosotros\ 3.jpg');
+        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-position: center; /* Centra la imagen en el fondo */
+        background-repeat: no-repeat; 
+        padding-left: 25px;
+
+        h3{
+            font-family: letrah1;
+            font-size: 50px;
+            margin-top: 20px;
+            padding-left: 200px;
+        }
+
+        #nosotros-primero{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            margin-top: 20px;
+
+            p{
+                width: 500px;
+                padding-right: 20px;
+                text-align: justify;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            #imagen1{
+                height: auto;
+                border: 2px solid #5B8C5A;
+                border-radius: 10px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+                .familia-amapola{
+                    height: 500px;
+                    display: block;
+                    border: 2px solid #5B8C5A;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        #nosotros-segundo{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            
+            p{
+                width: 500px;
+                padding-left: 30px;
+                text-align: justify;
+                font-size: 20px;
+            }
+            #imagen2{
+                height: 500px;
+                border: 2px solid #5B8C5A;
+                border-radius: 10px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+                .familia-amapola{
+                    height: 500px;
+                    display: block;
+                    border: 2px solid #5B8C5A;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    footer{
+        grid-area: footer;
+        width: 100vw;
+    }
+}

@@ -12,19 +12,11 @@ body {
   font-family: letrah1;
   src: url(../fonts/Letra1.ttf);
 }
-h1 {
-  color: red;
-}
-
-h3 {
-  background-color: green;
-}
-
 #cabecera {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 5px #bdd358;
+  border-bottom: 2px solid black;
 }
 #cabecera .logo-principal {
   width: 100px;
@@ -33,6 +25,9 @@ h3 {
 }
 #cabecera .logo-principal:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+#cabecera .nav-link {
+  padding-left: 10px;
 }
 #cabecera .boton {
   border-radius: 15px;
@@ -50,7 +45,7 @@ h3 {
   align-items: center;
   transition: all 1s;
 }
-#cabecera .boton::boton:hover {
+#cabecera .boton:hover {
   transform: scale(1.1);
   background-color: #5B8C5A;
   color: black;
@@ -81,12 +76,12 @@ main .div-h1 h1 {
   padding-top: 20px;
   transition: 3s;
 }
-main .div-h1::h1:hover {
+main .div-h1 :hover {
   height: 150px;
   font-size: 75px;
 }
 main section h4 {
-  background-color: #edb458;
+  background-color: #e8871e;
   text-align: center;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -126,6 +121,9 @@ main #cards .card {
   background-color: #d4d4aa;
   transition: 2s;
 }
+main #cards .card:hover {
+  background-color: gray;
+}
 main #cards .card img {
   width: auto;
   height: 235px;
@@ -140,6 +138,11 @@ main #cards .card .card-texto h3 {
   font-size: 18px;
   margin: 0;
   padding: 5px;
+  text-align: center;
+}
+main #cards .card .card-texto h3:hover {
+  text-decoration: underline;
+  color: blue;
 }
 main #cards .card .card-texto p {
   font-size: 14px;
@@ -157,6 +160,11 @@ footer .footer {
   color: white;
   border-bottom: 2px black solid;
   border-top: 5px solid #bdd358;
+}
+footer .footer .logo {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
 }
 footer .footer #navegador {
   padding: 5px;
@@ -177,9 +185,14 @@ footer .footer #navegador ul .lista a {
   list-style: none;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
+}
+footer .footer #navegador ul .lista a:hover {
+  color: gray;
+  text-decoration: underline;
 }
 footer .footer .iconos-redes {
-  width: 50px;
+  width: 180px;
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -193,15 +206,162 @@ footer .footer .iconos-redes {
 footer .footer .iconos-redes .redes-icono {
   max-width: 30px;
   height: auto;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 footer .derechos {
-  background-color: #4B534B;
+  background-color: #ebf5df;
   font-weight: bold;
   color: white;
   height: 30px;
   width: 100%;
   align-items: center;
+}
+
+.formulario {
+  min-height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  /* Imagen de fondo para el formulario */
+  background-image: url("../img/fondo formulario.jpg");
+  background-size: auto; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat;
+}
+.formulario #tituloContacto {
+  font-family: sans-serif;
+  font-size: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.formulario form fieldset .letra-formulario {
+  font-weight: 750;
+}
+.formulario form .enviar {
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: gray;
+  font-weight: bold;
+  color: black;
+  border-color: black;
+  border: 2px solid;
+  height: 25px;
+  height: auto;
+}
+.formulario form .select-radio {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.formulario form .letra-formulario {
+  font-weight: 750;
+}
+.formulario form #selecciona {
+  color: white;
+}
+
+#sobre-nosotros-grilla {
+  display: grid;
+  grid-template-areas: "cabecera cabecera cabecera" "main main main" "footer footer footer";
+  grid-template-rows: 130px 1250px 120px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#sobre-nosotros-grilla #cabecera {
+  grid-area: cabecera;
+  border: 2px solid black;
+}
+#sobre-nosotros-grilla .main-sobre {
+  grid-area: main;
+  background-image: url("../img/fondo sobre nosotros 3.jpg");
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+#sobre-nosotros-grilla .main-sobre h3 {
+  font-family: letrah1;
+  font-size: 50px;
+  margin-top: 20px;
+  padding-left: 200px;
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-primero {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-primero p {
+  width: 500px;
+  padding-right: 20px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-primero #imagen1 {
+  height: auto;
+  border: 2px solid #5B8C5A;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-primero #imagen1 .familia-amapola {
+  height: 500px;
+  display: block;
+  border: 2px solid #5B8C5A;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-segundo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-segundo p {
+  width: 500px;
+  padding-left: 30px;
+  text-align: justify;
+  font-size: 20px;
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-segundo #imagen2 {
+  height: 500px;
+  border: 2px solid #5B8C5A;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#sobre-nosotros-grilla .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
+  height: 500px;
+  display: block;
+  border: 2px solid #5B8C5A;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#sobre-nosotros-grilla footer {
+  grid-area: footer;
+  width: 100vw;
+}
+
+.main-login {
+  height: 1000px;
+}
+.main-login #form-login fieldset {
+  width: 300px;
+  height: 500px;
+  padding-top: 10px;
+  margin-left: 25px;
+  background-color: color-fondo;
+}
+.main-login #form-login fieldset .boton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.main-login #form-login fieldset .iniciar-sesion {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */

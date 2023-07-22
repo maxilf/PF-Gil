@@ -1,4 +1,4 @@
-html{
+/* html{
     font-family: 'Roboto', sans-serif;
     
 }
@@ -13,7 +13,7 @@ body{
 @font-face {
     font-family: letrah1;
     src: url(../fonts/Letra1.ttf);
-}
+} */
 
 /* ESTILO PARA EL HEADER */
 
@@ -107,9 +107,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     animation-timing-function: ease;
     animation-duration: 3s;
     animation-delay: 3s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
        
-}
+} */
 
 /* .div-h1{
     align-items: center;
@@ -120,10 +120,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     animation-delay: 1s;
 } */
 /* VER SI ESTA BIEN COMPILADO */
-h1:hover{
+/* h1:hover{
     height: 150px;
     font-size: 75px;
-}
+} */
 
 /* @keyframes efecto_h1{
     0%{height: 100px;}
@@ -155,14 +155,14 @@ h1:hover{
 } */
 
 /* VER PORQUE NO COMPILA */
-.boton:hover{
+/* .boton:hover{
     transform: scale(1.1);
     background-color: #5B8C5A;
     color: black;
     font-weight: 600;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
         
-}
+} */
 
 /* 
 section h4{
@@ -184,7 +184,7 @@ section h4{
 
 /* ESTILO LEYENDA ARTICLE */
 
-article{
+/* article{
     background-color: #ebf5dfff;
   
 }
@@ -202,7 +202,7 @@ article h4{
     font-family: 'Raleway', sans-serif;
     width: 100;
         
-}
+} */
 
 /* ESTILO CARDS COMPRAR.HTML*/
 
@@ -222,19 +222,19 @@ article h4{
 }
 
 
-#cards{
+/* #cards{
     display: flex;
     justify-content: space-around;
     height: auto;
     margin: 20px;
     
-}
+} */
 
 .card:hover{
     transform: rotateY(360deg);
 }
 
-.card {
+/* .card {
     width: 250px;
     height: auto; 
     border: 1px solid #bbb8b8;
@@ -251,42 +251,44 @@ article h4{
     height: 235px;
     border-radius: 5px;
     align-items: center;
-  }
+  } */
   
-  .card-texto {
+  /* .card-texto {
     margin-top: 10px;
     width: auto;
-  }
+  } */
   
-  .card-texto h3 {
+  /* .card-texto h3 {
     font-size: 18px;
     margin: 0;
     padding: 5px;
-  }
+  } */
   
-  .card-texto p {
+  /* .card-texto p {
     font-size: 14px;
     margin: 5px 0px;
     padding: 5px;
   }
-  
+   */
+   /* NO HAY CARD-TEXTO CON a
   .card-texto a {
     display: inline-block;
     font-size: 14px;
     color: blue;
     text-decoration: none;
-  }
+  } */
 
 /* CARDS DE INDEX.HTML */
 
+/* NO PROVOCA NINGUN CAMBIO
 .cards-index {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
   
 
 /* ESTILO DEL FOOTER */
-footer .footer{
+/* footer .footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -298,24 +300,24 @@ footer .footer{
     border-top:  5px solid #bdd358ff;
     
     
-}
+} */
 
-footer #navegador{
+/* footer #navegador{
     padding: 5px;
 
-}
+} */
 
 
-footer .derechos{
+/* footer .derechos{
     background-color: #4B534B;
     font-weight: bold;
     color: white;
     height: 30px;
     width: 100%;
     align-items: center;
-}
+} */
 
-footer .footer .iconos-redes{
+/* footer .footer .iconos-redes{
     width: 50px;
     height: 50px;
     display: flex;
@@ -331,12 +333,12 @@ footer .footer .iconos-redes{
     justify-content: center;
     align-items: center;
   }
-  
-.redes-icono {
+   */
+/* .redes-icono {
     max-width: 30px;
     height: auto;
     margin: 0 5px;
-  }
+  } */
 
 /* ESTILO A DEMAS HTML */
 
@@ -347,7 +349,7 @@ footer .footer .iconos-redes{
 }
 
 /* CONTACTO */
-#tituloContacto{
+/* #titulo-contacto{
     font-family: sans-serif; 
     font-size: 20px; 
     background-color: white;
@@ -366,18 +368,18 @@ footer .footer .iconos-redes{
     border: 1px solid #ccc;
     border-radius: 8px;
   
-    /* Imagen de fondo para el formulario */
+    
     background-image: url('../img/fondo\ formulario.jpg');
     background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; 
-}
+    /* background-position: center; 
+    background-repeat: no-repeat;  */
 
-.letra-formulario{
+
+/* .letra-formulario{
     font-weight: 900;
-}
+} */
 
-.enviar{
+/* .enviar{
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: gray;
@@ -387,7 +389,7 @@ footer .footer .iconos-redes{
     border: 2px solid;
     height: 25px;
     height: auto;
-}
+} */
 
 /* LOGIN */
 .pLogin{
@@ -402,7 +404,7 @@ footer .footer .iconos-redes{
 
 
 /* SOBRE NOSOTROS */
-#sobre-nosotros-grilla {
+/* #sobre-nosotros-grilla {
     display: grid;
     grid-template-areas:
         "cabecera cabecera cabecera"
@@ -410,33 +412,32 @@ footer .footer .iconos-redes{
         "footer footer footer";
     grid-template-rows: 200px 1150px 120px;
     grid-template-columns: 1fr 1fr 1fr;
-}
+} */
 
-#cabecera {
+/* #cabecera {
     grid-area: cabecera;
     border: 2px solid black;
-}
+} */
 
-main{
+/* main{
     grid-area: main;
 }
 
 .main-sobre{
-    /* Imagen de fondo para el formulario */
     background-image: url('../img/fondo\ sobre\ nosotros\ 3.jpg');
-    background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el fondo */
+    background-size:auto; 
+    background-position: center;
     background-repeat: no-repeat; 
-}
+} */
 
-.main-sobre #nosotros-primero {
+/* .main-sobre #nosotros-primero {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 20px;
 
-}
-.main-sobre #nosotros-segundo {
+} */
+/* .main-sobre #nosotros-segundo {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -458,9 +459,9 @@ main{
     text-align: justify;
     font-size: 20px;
 
-}
+} */
 
-.familia-amapola{
+/* .familia-amapola{
     height: auto;
     display: block;
     border: 2px solid #5B8C5A;
@@ -474,7 +475,7 @@ main{
     border-radius: 10px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
     
-}
+} */
 
 
 .main-sobre{
@@ -499,7 +500,7 @@ footer {
 
 /* PRACTICA GRIDS */
 
-#grilla{
+/* #grilla{
     display: grid;
     grid-template-areas: 
         "nav header header"
@@ -542,7 +543,7 @@ section #productos{
 footer{
     grid-area: footer;
     
-}   
+}    */
 
 
 /* MEDIA QUERIES */

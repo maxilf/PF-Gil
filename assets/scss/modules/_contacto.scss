@@ -1,0 +1,53 @@
+.formulario{
+    min-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  
+    /* Imagen de fondo para el formulario */
+    background-image: url('../img/fondo\ formulario.jpg');
+    background-size:auto; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; 
+    #tituloContacto{
+        font-family: sans-serif; 
+        font-size: 30px; 
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        fieldset{
+            .letra-formulario{
+                font-weight: 750;
+            }
+        }
+        .enviar{
+            margin-bottom: 15px;
+            border-radius: 15px;
+            background-color: gray;
+            font-weight: bold;
+            color: black;
+            border-color: black;
+            border: 2px solid;
+            height: 25px;
+            height: auto;
+        }
+        .select-radio{
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+        .letra-formulario{
+            font-weight: 750;
+        }
+        #selecciona{
+            color: white;
+        }
+    }
+}

@@ -4,18 +4,25 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 5px #bdd358ff;
+    border-bottom: 2px solid black;
+    
     .logo-principal{
         width: 100px;
         height: 100px;
         padding: 15px;
     }
+    
+    
+    
     .logo-principal:hover{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
     }
+    .nav-link{
+        padding-left: 10px;
+    }
     .boton{
         border-radius: 15px;
-        background-color: #e8871eff;
+        background-color: $main-color;
         font-weight: lighter;
         color: white;
         border-color: black;
@@ -29,13 +36,15 @@
         align-items: center;
         transition: all 1s;
     
-    &::boton:hover{
+    &:hover{
         transform: scale(1.1);
         background-color: #5B8C5A;
         color: black;
         font-weight: 600;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-    }}
+    }
+}
+    
         .nav-link{
             display: block;
             padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -64,14 +73,14 @@ main{
             padding-top: 20px;
             transition: 3s;
         }
-        &::h1:hover{
-            height: 150px;
-            font-size: 75px;
-        }
+    :hover{
+        height: 150px;
+        font-size: 75px;
+    }
     }
     section{
         h4{
-            background-color: #edb458ff;
+            background-color: $main-color;
             text-align: center;
             margin-top: 0%;
             margin-bottom: 0%;
@@ -81,7 +90,7 @@ main{
         }
     }    
     article{
-        background-color: #ebf5dfff;
+        background-color: $color-fondo;
         h2{
             text-align: center;
             font-family: 'Roboto', sans-serif;
@@ -110,6 +119,10 @@ main{
             margin: 10px;
             background-color: #d4d4aaff;
             transition: 2s;
+        &:hover{
+            background-color: gray; 
+            
+        }
             img{
                 width: auto;
                 height: 235px;
@@ -123,7 +136,12 @@ main{
                     font-size: 18px;
                     margin: 0;
                     padding: 5px;
+                    text-align: center;
+                &:hover{
+                    text-decoration: underline;
+                    color: blue; 
                 }
+               }
                 p{
                     font-size: 14px;
                     margin: 5px 0px;
@@ -148,6 +166,11 @@ footer{
         color: white;
         border-bottom: 2px black solid;
         border-top:  5px solid #bdd358ff;
+        .logo{
+            width: 100px;
+            height: 100px;
+            padding: 15px;
+        }
         #navegador{
             padding: 5px;
             ul{
@@ -164,6 +187,11 @@ footer{
                         list-style: none; 
                         color:white;
                         text-decoration: none;
+                        text-transform: uppercase;
+                    &:hover{
+                        color: gray;
+                        text-decoration: underline;
+                    }
                     }
                 }
 
@@ -171,7 +199,7 @@ footer{
 
         }
         .iconos-redes{
-            width: 50px;
+            width: 180px;
             height: 50px;
             display: flex;
             flex-direction: row;
@@ -184,12 +212,12 @@ footer{
             .redes-icono{
                 max-width: 30px;
                 height: auto;
-                margin-right: 5px;
+                margin-right: 10px;
             }
         }
     }    
     .derechos{
-        background-color: #4B534B;
+        background-color: $color-fondo;
         font-weight: bold;
         color: white;
         height: 30px;
