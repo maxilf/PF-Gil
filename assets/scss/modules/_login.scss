@@ -1,5 +1,12 @@
 .main-login{
-    height: 1000px;
+    height: 400px;
+    margin-top: 25px;
+    background-image: url("../img/fondo sobre nosotros 3.jpg");
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;
+    margin-bottom: 0%;
+
     #form-login{
         fieldset{
             width: 300px;

@@ -61,7 +61,7 @@ main{
     .div-h1{
         h1{
             display: block;
-            color: #333333;
+            color: red;
             text-align: center;
             background-image: linear-gradient(to left,#5B8C5A, #e8871eff);
             margin: 0%;
@@ -72,6 +72,10 @@ main{
             font-size: 50px;  
             padding-top: 20px;
             transition: 3s;
+
+            @media (max-width: 576px){
+                font-size: 35px;
+            }
         }
     :hover{
         height: 150px;
@@ -224,8 +228,87 @@ footer{
         width: 100%;
         align-items: center;
     }
+
+    }
+
+
+@media (max-width: 576px){
+    main .div-h1 h1{
+        font-size: 35px;
+    }
+    .footer{
+        width: auto;
+    }
+    footer .footer .logo{
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+    footer .footer #navegador ul{
+        width: 320px;
+    }
+    footer .footer #navegador ul .lista a{
+        color: red;
+        font-size: 11px;
+    }
+    footer .footer .iconos-redes{
+        width: 95px;
+        height: 40px;
+        padding: 5px;
+
+    }
+    footer .footer .iconos-redes .redes-icono{
+        max-width: 18px;
+        height: auto;
+        margin-right: 5px;
+    }
+    main #cards {
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        margin: 20px;
+    }
+    main #cards {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 5px;
+    }
+}   
+
+@media (min-width: 576px) and (max-width: 848px){
+    main .div-h1 h1{
+        font-size: 40px;
+    }
+    .footer{
+        width: auto;
+    }
+    footer .footer .logo{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    footer .footer #navegador ul{
+        width: 380px;
+    }
+    footer .footer #navegador ul .lista a{
+        color: green;
+        font-size: 13px;
+    }
+    footer .footer .iconos-redes{
+        width: 120px;
+        height: 45px;
+        padding: 8px;
+    }
+    footer .footer .iconos-redes .redes-icono{
+        max-width: 20px;
+        height: auto;
+        margin-right: 8px;
+    }
+    main #cards {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 10px;
+      }
 }
-
-
-    
-
