@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DE ANIMATE -->
+    <meta name="description" content="Dietetica dedicada a la venta de productos para celiacos, hipertensos, vegetarianos, veganos, dieta keto, productos organicos, en la ciudad de Las Flores">
+    <meta name="keywords" content="SIN TACC, CELIACO, INTEGRAL, ORGANICO, VEGETARIANO, VEGANO, DIABETICO">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
     <title>Amapola</title>
     <!-- LINK GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,37 +27,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
-
     <!-- LOGO CON FLAVICON -->
     <link rel="icon" href="./assets/img/fotor_2023-6-11_12_23_36 (2).ico">
 
-    <!-- AGREGO ESTE COMENTARIO PARA PRACTICAR GIT -->
-
+    
 </head>
 
 <body>
     <!-- HEADER CON BOOTSTRAP -->
     <header id="cabecera">
-        <div>
-            <img src="./assets/img/fotor_2023-6-11_12_23_36.png" class="logo-principal" alt="">
-        </div>
+        <a href="./index.html">
+            <img src="./assets/img/fotor_2023-6-11_12_23_36.png" class="logo-principal" alt="Logo de la dietetica">
+        </a>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary.bg-white d-flex justify-content-center align-items-start w-60">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./pages/login.html">Login</a>
+              <a class="navbar-brand texto-nav" href="./pages/login.html">LOGIN</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/comprar.html">Comprar</a>
+                    <a class="nav-link" href="./pages/comprar.html">COMPRAR</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+                    <a class="nav-link" href="./pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -61,33 +66,33 @@
             </div>
           </nav>
 
-          <button class="boton">INGRESAR</button>
+        <button class="boton">INGRESAR</button>
 
     </header>
 
     <main>
-
-        <h1>Dietetica Amapola</h1>
-
+        <div class="div-h1">
+          <h1>Dietetica Amapola</h1>
+        </div>
+        
         <section>
             <h4>NUEVO Horario Lunes a Viernes de 9.30 hs a 13 hs y de 17 hs a 21 hs</h4>
-
-            <!-- <div>
-                <img class="scroll" src="./assets/img/frutos secos 2.jpg" alt="imagen fondo frutos secos">
-            </div> -->
 
             <!-- APLICO CARROUSEL CON BOOTSTRAP -->
 
             <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+                <div class="carousel-inner carousel-tamaño">
                   <div class="carousel-item active">
-                    <img src="./assets/img/frutos secos 2.jpg" class="d-flex justify-content-center align-items-center h-75 w-100" alt="...">
+                    <img src="./assets/img/frutos secos 2.webp" class="d-flex justify-content-center align-items-center h-75 w-100" alt="Foto de frutos secos">
+                    <div>
+                      <p class="texto-sobreimg">Frutos secos</p>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/especias.jpg" class="d-flex justify-content-center align-items-center h-50 w-100" alt="...">
+                    <img src="./assets/img/especias.webp" class="d-flex justify-content-center align-items-center h-50 w-100" alt="Imagen de varias especias">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/yoghurt vegano.jpg" class="d-flex justify-content-end align-items-center h-75 w-100" alt="...">
+                    <img src="./assets/img/yoghurt vegano.webp" class="d-flex justify-content-end align-items-center h-75 w-100" alt="Imagen de yoghurt vegano">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -116,7 +121,7 @@
         <section id="cards" class="cards-index">
             <!-- CARD 1 -->
             <div class="card card-index">
-                <img src="./assets/img/almendra non pareli.jpg" alt="">
+                <img src="./assetS/img/almendra non pareli.webp" alt="Imagen de almendra variedad Non pareli">
                 <div class="card-texto">
                     <h3>Almendra non pareli</h3>
                     <p>Fuente de minerales y vitaminas del complejo B</p>
@@ -124,7 +129,7 @@
             </div>
             <!-- CARD 2 -->
             <div class="card card-index">
-                <img src="./assets/img/budin integral.jpg" alt="">
+                <img src="./assets/img/budin integral.webp" alt="Foto de plato con budin y mate de fondo">
                 <div class="card-texto">
                     <h3>Budin Integral</h3>
                     <p>Budin con harina integral agroecologica.</p>
@@ -132,7 +137,7 @@
             </div>
             <!-- CARD 3 -->
             <div class="card card-index">
-                <img src="./assets/img/granola.jpg" alt="">
+                <img src="./assets/img/budin integral.webp" alt="Foto desde arriba de bowl con yoghurt y granola">
                 <div class="card-texto">
                     <h3>Granola</h3>
                     <p>Surtido de cereales con pasas, ideal para consumir con yoghurt</p>
@@ -144,7 +149,7 @@
     <footer>
         <div class="footer">
             <!-- IMAGEN LOGO DIETETICA -->
-            <img class="logo" src="./assets/img/fotor_2023-6-11_12_23_36.png" alt="">
+            <img class="logo" src="./assets/img/fotor_2023-6-11_12_23_36.png" alt="Logo de la dietetica">
 
             <!-- ENLACES A DEMAS HTML -->
             <nav id="navegador">
@@ -166,9 +171,9 @@
 
             <!-- ICONOS REDES SOCIALES -->
             <div class="iconos-redes">
-                <img src="./assets/img/square-facebook.svg" alt="">
-                <img src="./assets/img/instagram.svg" alt="">
-                <img src="./assets/img/whatsapp.svg" alt="">
+                <img class="redes-icono" src="./assets/img/square-facebook.svg" alt="icono de facebook">
+                <img class="redes-icono" src="./assets/img/instagram.svg" alt="icono de instagram">
+                <img class="redes-icono" src="./assets/img/whatsapp.svg" alt="icono de whatsapp">
             </div>
 
         </div>

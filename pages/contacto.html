@@ -8,14 +8,26 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <title>Amapola</title>
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- LOGO CON FLAVICON -->
+    <link rel="icon" href="../assets/img/fotor_2023-6-11_12_23_36 (2).ico">
 </head>
 <body>
     <header id="cabecera">
-        <div>
-            <img src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="">
-        </div>
-
+        <a href="../index.html">
+            <img src="../assets/img/fotor_2023-6-11_12_23_36.png" class="logo-principal" alt="Logo de la Dietetica">
+        </a>
         <nav class="navbar navbar-expand-lg bg-body-tertiary.bg-white d-flex justify-content-center align-items-start w-60">
             <div class="container-fluid">
               <a class="navbar-brand" href="./login.html">Login</a>
@@ -47,36 +59,40 @@
     </header>
 
 
-    <main>
-        <h3 id="tituloContacto">Por favor completa los datos y te contactaremos a la brevedad</h3>
+    <main class="formulario">
+        <h3 id="titulo-contacto">Por favor completa los datos y te contactaremos a la brevedad</h3>
 
         <form action="procesar_formulario.php" method="post" enctype="text/plain">
             <fieldset>
                 <legend>Datos Personales</legend>
-                <label for="nombre">Nombre:</label>
+                <label for="nombre" class="letra-formulario">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required><br><br>
 
-                <label for="apellido">Apellido:</label>
+                <label for="apellido" class="letra-formulario">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required><br><br>
 
-                <label for="mail">Mail:</label>
+                <label for="mail" class="letra-formulario">Mail:</label>
                 <input type="email" id="mail" name="mail" required><br><br>
             </fieldset>         
 
-            <label for="mensaje">Mensaje:</label><br>
+            <label for="mensaje" class="letra-formulario">Mensaje:</label><br>
             <textarea id="mensaje" name="mensaje" rows="8" cols="50" required></textarea><br><br>
 
-            <label for="genero">Género</label>
-            <div>Masculino</div>
+            <label for="genero" class="letra-formulario">Género</label>
+            
+            <div class="letra-formulario">Masculino</div>
             <input type="radio" name="genero" value="M">
-            <div>Femenino</div>
+
+            <div class="letra-formulario">Femenino</div>
             <input type="radio" name="genero" value="F">
-            <div>No Binario</div>
+
+            <div class="letra-formulario">No Binario</div>
             <input type="radio" name="genero" value="NB"><br><br>
 
-            <label for="pais">Selecciona un país:</label>  
+            
+            <label for="pais" class="letra-formulario" id="selecciona">Selecciona un país:</label>  
             <select name="pais" id="pais">
-                <option value="N/C">Seleccionar..</option>
+                <option value="N/C" class="letra-formulario">Seleccionar..</option>
                 <option value="Argentina">Argentina</option>
                 <option value="Brazil">Brazil</option>
                 <option value="Colombia">Colombia</option>
@@ -113,9 +129,9 @@
 
             <!-- ICONOS REDES SOCIALES -->
             <div class="iconos-redes">
-                <img src="../assets/img/square-facebook.svg" alt="">
-                <img src="../assets/img/instagram.svg" alt="">
-                <img src="../assets/img/whatsapp.svg" alt="">
+                <img class="redes-icono" src="../assets/img/square-facebook.svg" alt="Icono Facebook">
+                <img class="redes-icono" src="../assets/img/instagram.svg" alt="Icono Instagram">
+                <img class="redes-icono" src="../assets/img/whatsapp.svg" alt="Icono whatsapp">
             </div>
 
         </div>
