@@ -4,8 +4,8 @@
         "cabecera cabecera cabecera"
         "main main main"
         "footer footer footer";
-    grid-template-rows: 130px 1250px 120px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto auto;
 
     #cabecera{
         grid-area: cabecera;
@@ -14,40 +14,41 @@
 
     .main-sobre{
         grid-area: main;
-        background-image: url('../img/fondo\ sobre\ nosotros\ 3.jpg');
-        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-        background-position: center; /* Centra la imagen en el fondo */
+        background-image: url('../../img/fondo\ sobre\ nosotros\ 3.webp');
+        background-size: cover; 
+        background-position: center; 
         background-repeat: no-repeat; 
         padding-left: 25px;
+
 
         h3{
             font-family: letrah1;
             font-size: 50px;
-            margin-top: 20px;
+            padding-top: 20px;
             padding-left: 200px;
         }
 
         #nosotros-primero{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: start;
             margin-top: 20px;
 
             p{
-                width: 500px;
-                padding-right: 20px;
+                width: 850px;
                 text-align: justify;
                 font-size: 20px;
                 font-weight: 400;
             }
             #imagen1{
-                height: auto;
-                border: 2px solid #5B8C5A;
+                width: 650px;
+                height: 650px;
                 border-radius: 10px;
                 box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 
                 .familia-amapola{
-                    height: 500px;
+                    width: 650px;
+                    height: 650px;
                     display: block;
                     border: 2px solid #5B8C5A;
                     border-radius: 10px;
@@ -57,35 +58,48 @@
         }
         #nosotros-segundo{
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
             justify-content: start;
             margin-top: 20px;
             padding-bottom: 20px;
+            padding-left: 40px;
             
             p{
-                width: 500px;
-                padding-left: 30px;
+                width: 850px;
                 text-align: justify;
                 font-size: 20px;
+                padding-right: 15px;
             }
             #imagen2{
-                height: 500px;
-                border: 2px solid #5B8C5A;
+
+                width: 650;
+                height: 650px;
                 border-radius: 10px;
                 box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 
                 .familia-amapola{
-                    height: 500px;
+                    width: 650px;
+                    height: 570px;
                     display: block;
                     border: 2px solid #5B8C5A;
                     border-radius: 10px;
                     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+                    
                 }
             }
         }
     }
-    footer{
+    .footer{
         grid-area: footer;
         width: 100vw;
     }
+}
+
+@media (max-width: 576px){
+
+}
+
+@media (min-width: 576px) and (max-width: 1045px){
+    
+
 }

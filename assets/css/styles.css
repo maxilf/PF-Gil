@@ -64,7 +64,7 @@ body {
 
 main .div-h1 h1 {
   display: block;
-  color: red;
+  color: rgb(247, 225, 225);
   text-align: center;
   background-image: linear-gradient(to left, #5B8C5A, #e8871e);
   margin: 0%;
@@ -214,7 +214,7 @@ footer .footer .iconos-redes .redes-icono {
   margin-right: 10px;
 }
 footer .derechos {
-  background-color: #ebf5df;
+  background-color: #edb458;
   font-weight: bold;
   color: white;
   height: 30px;
@@ -238,7 +238,6 @@ footer .derechos {
     width: 320px;
   }
   footer .footer #navegador ul .lista a {
-    color: red;
     font-size: 11px;
   }
   footer .footer .iconos-redes {
@@ -280,7 +279,6 @@ footer .derechos {
     width: 380px;
   }
   footer .footer #navegador ul .lista a {
-    color: green;
     font-size: 13px;
   }
   footer .footer .iconos-redes {
@@ -348,11 +346,40 @@ footer .derechos {
   color: white;
 }
 
+#main-comprar {
+  background-color: #5B8C5A;
+}
+#main-comprar #tarjetas {
+  background-color: #5B8C5A;
+}
+#main-comprar #tarjetas .card-comprar {
+  width: 55px;
+  height: 35px;
+}
+
+#tarjetas {
+  background-color: #5B8C5A;
+}
+#tarjetas .card-comprar {
+  width: 55px;
+  height: 35px;
+}
+
+.filtro {
+  border-radius: 3px;
+  padding-top: 3px;
+  background-color: #bad4aa;
+  width: 180px;
+  position: absolute;
+  position: relative;
+  left: 850px;
+}
+
 #sobre-nosotros-grilla {
   display: grid;
   grid-template-areas: "cabecera cabecera cabecera" "main main main" "footer footer footer";
-  grid-template-rows: 130px 1250px 120px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto auto auto;
 }
 #sobre-nosotros-grilla #cabecera {
   grid-area: cabecera;
@@ -360,39 +387,39 @@ footer .derechos {
 }
 #sobre-nosotros-grilla .main-sobre {
   grid-area: main;
-  background-image: url("../img/fondo sobre nosotros 3.jpg");
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-position: center; /* Centra la imagen en el fondo */
+  background-image: url("../../img/fondo sobre nosotros 3.webp");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   padding-left: 25px;
 }
 #sobre-nosotros-grilla .main-sobre h3 {
   font-family: letrah1;
   font-size: 50px;
-  margin-top: 20px;
+  padding-top: 20px;
   padding-left: 200px;
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-primero {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   margin-top: 20px;
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-primero p {
-  width: 500px;
-  padding-right: 20px;
+  width: 850px;
   text-align: justify;
   font-size: 20px;
   font-weight: 400;
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-primero #imagen1 {
-  height: auto;
-  border: 2px solid #5B8C5A;
+  width: 650px;
+  height: 650px;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-primero #imagen1 .familia-amapola {
-  height: 500px;
+  width: 650px;
+  height: 650px;
   display: block;
   border: 2px solid #5B8C5A;
   border-radius: 10px;
@@ -400,31 +427,33 @@ footer .derechos {
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-segundo {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: start;
   margin-top: 20px;
   padding-bottom: 20px;
+  padding-left: 40px;
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-segundo p {
-  width: 500px;
-  padding-left: 30px;
+  width: 850px;
   text-align: justify;
   font-size: 20px;
+  padding-right: 15px;
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-segundo #imagen2 {
-  height: 500px;
-  border: 2px solid #5B8C5A;
+  width: 650;
+  height: 650px;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 #sobre-nosotros-grilla .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
-  height: 500px;
+  width: 650px;
+  height: 570px;
   display: block;
   border: 2px solid #5B8C5A;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
-#sobre-nosotros-grilla footer {
+#sobre-nosotros-grilla .footer {
   grid-area: footer;
   width: 100vw;
 }

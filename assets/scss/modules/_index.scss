@@ -11,15 +11,15 @@
         height: 100px;
         padding: 15px;
     }
-    
-    
-    
+      
     .logo-principal:hover{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
     }
+    
     .nav-link{
         padding-left: 10px;
     }
+    
     .boton{
         border-radius: 15px;
         background-color: $main-color;
@@ -61,7 +61,7 @@ main{
     .div-h1{
         h1{
             display: block;
-            color: red;
+            color: rgb(247, 225, 225);
             text-align: center;
             background-image: linear-gradient(to left,#5B8C5A, #e8871eff);
             margin: 0%;
@@ -221,7 +221,7 @@ footer{
         }
     }    
     .derechos{
-        background-color: $color-fondo;
+        background-color: $secondary-color;
         font-weight: bold;
         color: white;
         height: 30px;
@@ -248,7 +248,6 @@ footer{
         width: 320px;
     }
     footer .footer #navegador ul .lista a{
-        color: red;
         font-size: 11px;
     }
     footer .footer .iconos-redes{
@@ -292,7 +291,6 @@ footer{
         width: 380px;
     }
     footer .footer #navegador ul .lista a{
-        color: green;
         font-size: 13px;
     }
     footer .footer .iconos-redes{
