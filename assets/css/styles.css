@@ -26,9 +26,6 @@ body {
 #cabecera .logo-principal:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
-#cabecera .nav-link {
-  padding-left: 10px;
-}
 #cabecera .boton {
   border-radius: 15px;
   background-color: #e8871e;
@@ -53,13 +50,32 @@ body {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 #cabecera .nav-link {
+  margin-right: 12px;
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
   text-decoration: none;
-  background-color: white;
+  background: 0 0;
   border: 0;
+}
+#cabecera .nav-link:hover {
+  background-color: #5B8C5A;
+  border-radius: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: white;
+}
+#cabecera .navbar-brand {
+  font-size: 16px;
+}
+#cabecera .navbar-brand:hover {
+  background-color: #5B8C5A;
+  border-radius: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: white;
 }
 
 main .div-h1 h1 {
@@ -375,89 +391,142 @@ footer .derechos {
   left: 850px;
 }
 
-#sobre-nosotros-grilla {
-  display: grid;
-  grid-template-areas: "cabecera cabecera cabecera" "main main main" "footer footer footer";
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: auto auto auto;
-}
-#sobre-nosotros-grilla #cabecera {
-  grid-area: cabecera;
+#cabecera {
   border: 2px solid black;
 }
-#sobre-nosotros-grilla .main-sobre {
-  grid-area: main;
-  background-image: url("../../img/fondo sobre nosotros 3.webp");
+
+.main-sobre {
+  width: 100rem;
+  background-image: url("../../img/fondo sobre nosotros 2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-left: 25px;
+  margin-left: 30px;
 }
-#sobre-nosotros-grilla .main-sobre h3 {
+.main-sobre h3 {
   font-family: letrah1;
   font-size: 50px;
   padding-top: 20px;
   padding-left: 200px;
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-primero {
+.main-sobre #nosotros-primero {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   margin-top: 20px;
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-primero p {
-  width: 850px;
+.main-sobre #nosotros-primero p {
+  width: 650px;
   text-align: justify;
   font-size: 20px;
   font-weight: 400;
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-primero #imagen1 {
+.main-sobre #nosotros-primero #imagen1 {
   width: 650px;
   height: 650px;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-primero #imagen1 .familia-amapola {
+.main-sobre #nosotros-primero #imagen1 .familia-amapola {
   width: 650px;
   height: 650px;
-  display: block;
   border: 2px solid #5B8C5A;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-segundo {
+.main-sobre #nosotros-segundo {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   margin-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
+  margin-bottom: 25px;
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-segundo p {
-  width: 850px;
+.main-sobre #nosotros-segundo p {
+  width: 650px;
   text-align: justify;
   font-size: 20px;
-  padding-right: 15px;
+  font-weight: 400;
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-segundo #imagen2 {
-  width: 650;
+.main-sobre #nosotros-segundo #imagen2 {
+  width: 650px;
   height: 650px;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
-#sobre-nosotros-grilla .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
+.main-sobre #nosotros-segundo #imagen2 .familia-amapola {
   width: 650px;
-  height: 570px;
-  display: block;
+  height: 650px;
   border: 2px solid #5B8C5A;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
-#sobre-nosotros-grilla .footer {
-  grid-area: footer;
+
+.footer {
   width: 100vw;
 }
 
+@media (max-width: 576px) {
+  h3 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  #nosotros-primero {
+    width: 100%;
+  }
+  #nosotros-primero p {
+    width: 100%;
+    font-size: 20px;
+    padding-right: 15px;
+  }
+  #nosotros-primero #imagen1 {
+    width: 100%;
+    height: auto;
+  }
+  #nosotros-segundo {
+    width: 100%;
+  }
+  #nosotros-segundo p {
+    width: 100%;
+    font-size: 20px;
+    padding-right: 15px;
+  }
+  #nosotros-segundo #imagen2 {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 1045px) {
+  h3 {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  #nosotros-primero {
+    width: 100%;
+  }
+  #nosotros-primero p {
+    width: auto;
+    font-size: auto;
+    padding-right: 15px;
+  }
+  #nosotros-primero #imagen1 {
+    width: 100%;
+    height: auto;
+  }
+  #nosotros-segundo {
+    width: 100%;
+  }
+  #nosotros-segundo p {
+    width: auto;
+    font-size: auto;
+    padding-right: 15px;
+  }
+  #nosotros-segundo #imagen2 {
+    width: 100%;
+    height: auto;
+  }
+}
 .main-login {
   height: 400px;
   margin-top: 25px;
