@@ -7,72 +7,66 @@
     border-bottom: 2px solid black;
     
     .logo-principal{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         padding: 15px;
     }
       
-    .logo-principal:hover{
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-    }
-    
+   //APLICANDO MIXIN
     .boton{
-        border-radius: 15px;
-        background-color: $main-color;
-        font-weight: lighter;
-        color: white;
-        border-color: black;
-        border: 1px solid;
-        height: 25px;
-        margin-top: 13px;
-        margin-right: 15px;
-        display: flex;
-        flex-direction: column;
-        font-size: 12px;
-        align-items: center;
-        transition: all 1s;
-    
+        @include boton-color-align (white, $main-color);
+   
     &:hover{
-        transform: scale(1.1);
+        transform: scale(.9);
         background-color: #5B8C5A;
         color: black;
         font-weight: 600;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
     }
 
-}
+    }
     
         .nav-link{
-            margin-right: 12px;
-            display: block;
-            padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-            font-size: var(--bs-nav-link-font-size);
-            font-weight: var(--bs-nav-link-font-weight);
-            color: var(--bs-nav-link-color);
-            text-decoration: none;
-            background: 0 0;
-            border: 0;
+            margin-left: 3px;
+            margin-right: 3px;
+            transition: .5s;
+            border-radius: 12px;
 
             &:hover{
                 background-color: #5B8C5A;
                 border-radius: 12px;
-                padding-left: 2px;
-                padding-right: 2px;
                 color: white;
             }
         }
         .navbar-brand {
             font-size: 16px;
+            padding: 10px;
+            font-weight: lighter;
+            margin-right: 3px;
 
             &:hover{
                 background-color: #5B8C5A;
                 border-radius: 12px;
-                padding-left: 2px;
-                padding-right: 2px;
                 color: white;
             }
         }
-}
+        .btn-outline-success {
+            --bs-btn-color: #5B8C5A;
+            --bs-btn-border-color: black;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #5B8C5A ;
+            --bs-btn-hover-border-color: #5B8C5A;
+            --bs-btn-focus-shadow-rgb: 25,135,84;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #5B8C5A;
+            --bs-btn-active-border-color: #5B8C5A;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #5B8C5A;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #5B8C5A;
+            --bs-gradient: none;
+    }
+}    
 
 //MAIN
 main{
@@ -141,6 +135,10 @@ main{
             margin: 10px;
             background-color: #d4d4aaff;
             transition: 2s;
+        img{
+            padding-left: 15px;
+            padding-right: 15px;
+        }    
         &:hover{
             background-color: gray; 
             
@@ -188,9 +186,9 @@ footer{
         color: white;
         border-bottom: 2px black solid;
         border-top:  5px solid #bdd358ff;
-        .logo{
-            width: 100px;
-            height: 100px;
+        .logo-principal{
+            width: 120px;
+            height: 120px;
             padding: 15px;
         }
         #navegador{
@@ -231,11 +229,16 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
-            .redes-icono{
-                max-width: 30px;
-                height: auto;
-                margin-right: 10px;
+            .fa-brands, .fab {
+                font-weight: 200;
+                font-size: 30px;
+                color: white;
+                margin-right: 12px;
+            &:hover{
+                transform: scale(1.1);
             }
+            }
+
         }
     }    
     .derechos{

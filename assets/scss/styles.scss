@@ -1,9 +1,11 @@
-@import "./modules/variables";
-@import "./modules/resets";
-@import "./modules/index";
-@import "./modules/contacto";
-@import "./modules/comprar";
-@import "./modules/sobre_nosotros";
-@import "./modules/login";
+@import "./modules/utilities/variables";
+@import "./modules/utilities/mixins";
+@import "./modules/base/resets";
+@import "./modules/layout/index";
+@import "./modules/layout/contacto";
+@import "./modules/layout/comprar";
+@import "./modules/layout/sobre_nosotros";
+@import "./modules/layout/registrate";
+
 
 

@@ -1,0 +1,169 @@
+    #cabecera{
+        border: 2px solid black;
+    }
+
+    .main-sobre{
+        width: auto;
+        background-image: url('../../../img/fondo\ sobre\ nosotros\ 3.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: gray;
+        
+        h3{
+            font-family: letrah1;
+            font-size: 50px;
+            padding-top: 20px;
+            padding-left: 220px;
+        }
+
+        #nosotros-primero{
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+
+            p{
+                width: 650px;
+                height: 320px;
+                text-align: justify;
+                font-size: 17px;
+                font-weight: 400;
+                margin-right: 15px;
+            }
+            #imagen1{
+                width: 320px;
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+                .familia-amapola{
+                    width: 320px;
+                    height: 300px;
+                    border: 2px solid #5B8C5A;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        #nosotros-segundo{
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 25px;
+
+            p{
+                width: 650px;
+                text-align: justify;
+                font-size: 17px;
+                font-weight: 400;
+                margin-left: 15px;
+            }
+            #imagen2{
+                width: 320px;
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+
+                .familia-amapola{
+                    width: 320px;
+                    height: 300px;
+                    border: 2px solid #5B8C5A;
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    
+    .footer{
+        width: 100vw;
+    }
+
+
+@media (max-width: 576px){        
+        h3{
+            font-family: letrah1;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        #nosotros-primero{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            p{
+                width: auto;
+                height: auto;
+                font-size: 12px;
+            }
+            #imagen1{
+                width: 150px;
+                height: 150px;
+                .familia-amapola{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+        #nosotros-segundo{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            p{
+                width: auto;
+                height: auto;
+                font-size: 12px;
+            }
+            #imagen2{
+                width: 150px;
+                height: 150px;
+                .familia-amapola{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    
+
+
+// @media (min-width: 576px) and (max-width: 1045px){
+//     h3{
+//         font-size: 25px;
+//         padding-left: 50px;
+//     }
+
+//     #nosotros-primero{
+//         width: 100%;
+
+//         p{
+//             width: auto;
+//             font-size: auto;
+//             padding-right: 15px;
+//         }
+//         #imagen1{
+//             width: 100%;
+//             height: auto;
+
+//         }
+//     }
+//     #nosotros-segundo{
+//         width: 100%;
+
+//         p{
+//             width: auto;
+//             font-size: auto;
+//             padding-right: 15px;
+//         }
+//         #imagen2{
+//             width: 100%;
+//             height: auto;
+
+//         }
+//     }
+
+

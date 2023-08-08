@@ -1,0 +1,23 @@
+@mixin boton-color-align ($color-letra, $color-fondo)
+{
+    border-radius: 15px;
+    background-color: $color-fondo;
+    font-weight: 600;
+    color: $color-letra;
+    border-color: black;
+    border: 1px solid;
+    height: 35px;
+    padding-top: 7px;
+    margin-top: 13px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    transition: all 1s;
+}
+
+@mixin imagen-mobile{
+    width: 150px;
+    height: 150px;
+}

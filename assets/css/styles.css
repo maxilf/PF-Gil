@@ -19,21 +19,19 @@ body {
   border-bottom: 2px solid black;
 }
 #cabecera .logo-principal {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   padding: 15px;
-}
-#cabecera .logo-principal:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 #cabecera .boton {
   border-radius: 15px;
   background-color: #e8871e;
-  font-weight: lighter;
+  font-weight: 600;
   color: white;
   border-color: black;
   border: 1px solid;
-  height: 25px;
+  height: 35px;
+  padding-top: 7px;
   margin-top: 13px;
   margin-right: 15px;
   display: flex;
@@ -43,39 +41,49 @@ body {
   transition: all 1s;
 }
 #cabecera .boton:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   background-color: #5B8C5A;
   color: black;
   font-weight: 600;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 #cabecera .nav-link {
-  margin-right: 12px;
-  display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
-  font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
-  text-decoration: none;
-  background: 0 0;
-  border: 0;
+  margin-left: 3px;
+  margin-right: 3px;
+  transition: 0.5s;
+  border-radius: 12px;
 }
 #cabecera .nav-link:hover {
   background-color: #5B8C5A;
   border-radius: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
   color: white;
 }
 #cabecera .navbar-brand {
   font-size: 16px;
+  padding: 10px;
+  font-weight: lighter;
+  margin-right: 3px;
 }
 #cabecera .navbar-brand:hover {
   background-color: #5B8C5A;
   border-radius: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
   color: white;
+}
+#cabecera .btn-outline-success {
+  --bs-btn-color: #5B8C5A;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5B8C5A ;
+  --bs-btn-hover-border-color: #5B8C5A;
+  --bs-btn-focus-shadow-rgb: 25,135,84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #5B8C5A;
+  --bs-btn-active-border-color: #5B8C5A;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #5B8C5A;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #5B8C5A;
+  --bs-gradient: none;
 }
 
 main .div-h1 h1 {
@@ -142,6 +150,10 @@ main #cards .card {
   background-color: #d4d4aa;
   transition: 2s;
 }
+main #cards .card img {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 main #cards .card:hover {
   background-color: gray;
 }
@@ -182,9 +194,9 @@ footer .footer {
   border-bottom: 2px black solid;
   border-top: 5px solid #bdd358;
 }
-footer .footer .logo {
-  width: 100px;
-  height: 100px;
+footer .footer .logo-principal {
+  width: 120px;
+  height: 120px;
   padding: 15px;
 }
 footer .footer #navegador {
@@ -224,10 +236,14 @@ footer .footer .iconos-redes {
   justify-content: center;
   align-items: center;
 }
-footer .footer .iconos-redes .redes-icono {
-  max-width: 30px;
-  height: auto;
-  margin-right: 10px;
+footer .footer .iconos-redes .fa-brands, footer .footer .iconos-redes .fab {
+  font-weight: 200;
+  font-size: 30px;
+  color: white;
+  margin-right: 12px;
+}
+footer .footer .iconos-redes .fa-brands:hover, footer .footer .iconos-redes .fab:hover {
+  transform: scale(1.1);
 }
 footer .derechos {
   background-color: #edb458;
@@ -340,45 +356,68 @@ footer .derechos {
 .formulario form fieldset .letra-formulario {
   font-weight: 750;
 }
-.formulario form .enviar {
-  margin-bottom: 15px;
-  border-radius: 15px;
-  background-color: gray;
-  font-weight: bold;
-  color: black;
-  border-color: black;
-  border: 2px solid;
-  height: 25px;
-  height: auto;
+.formulario form .boton-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.formulario form .select-radio {
+.formulario form .enviar {
+  border-radius: 15px;
+  background-color: #e8871e;
+  font-weight: 600;
+  color: white;
+  border-color: black;
+  border: 1px solid;
+  height: 35px;
+  padding-top: 7px;
+  margin-top: 13px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  transition: all 1s;
+  width: 60px;
+}
+.formulario form .enviar:hover {
+  transform: scale(0.9);
+  background-color: #5B8C5A;
+  color: black;
+  font-weight: 600;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+.formulario form .enviar .select-radio {
   display: flex;
   flex-direction: row-reverse;
 }
-.formulario form .letra-formulario {
+.formulario form .enviar .letra-formulario {
   font-weight: 750;
 }
-.formulario form #selecciona {
+.formulario form .enviar #selecciona {
   color: white;
 }
 
 #main-comprar {
-  background-color: #5B8C5A;
+  background-color: #ebf5df;
+  height: auto;
 }
 #main-comprar #tarjetas {
-  background-color: #5B8C5A;
+  background-color: #ebf5df;
 }
 #main-comprar #tarjetas .card-comprar {
   width: 55px;
   height: 35px;
 }
-
-#tarjetas {
-  background-color: #5B8C5A;
+#main-comprar .card {
+  margin: 15px;
 }
-#tarjetas .card-comprar {
-  width: 55px;
-  height: 35px;
+#main-comprar .card-img, #main-comprar .card-img-top {
+  height: 250px;
+  width: 250px;
+  padding-top: 5px;
+}
+#main-comprar .card-body {
+  justify-content: center;
 }
 
 .filtro {
@@ -396,41 +435,43 @@ footer .derechos {
 }
 
 .main-sobre {
-  width: 100rem;
-  background-image: url("../../img/fondo sobre nosotros 2.jpg");
+  width: auto;
+  background-image: url("../../../img/fondo sobre nosotros 3.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 30px;
+  background-color: gray;
 }
 .main-sobre h3 {
   font-family: letrah1;
   font-size: 50px;
   padding-top: 20px;
-  padding-left: 200px;
+  padding-left: 220px;
 }
 .main-sobre #nosotros-primero {
-  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 20px;
 }
 .main-sobre #nosotros-primero p {
   width: 650px;
+  height: 320px;
   text-align: justify;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
+  margin-right: 15px;
 }
 .main-sobre #nosotros-primero #imagen1 {
-  width: 650px;
-  height: 650px;
+  width: 320px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .main-sobre #nosotros-primero #imagen1 .familia-amapola {
-  width: 650px;
-  height: 650px;
+  width: 320px;
+  height: 300px;
   border: 2px solid #5B8C5A;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -438,26 +479,27 @@ footer .derechos {
 .main-sobre #nosotros-segundo {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  flex-direction: row-reverse;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 25px;
 }
 .main-sobre #nosotros-segundo p {
   width: 650px;
   text-align: justify;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
+  margin-left: 15px;
 }
 .main-sobre #nosotros-segundo #imagen2 {
-  width: 650px;
-  height: 650px;
+  width: 320px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
-  width: 650px;
-  height: 650px;
+  width: 320px;
+  height: 300px;
   border: 2px solid #5B8C5A;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -469,86 +511,96 @@ footer .derechos {
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 20px;
-    padding-left: 20px;
+    font-family: letrah1;
+    font-size: 30px;
+    padding-top: 10px;
   }
   #nosotros-primero {
-    width: 100%;
-  }
-  #nosotros-primero p {
-    width: 100%;
-    font-size: 20px;
-    padding-right: 15px;
-  }
-  #nosotros-primero #imagen1 {
-    width: 100%;
     height: auto;
-  }
-  #nosotros-segundo {
-    width: 100%;
-  }
-  #nosotros-segundo p {
-    width: 100%;
-    font-size: 20px;
-    padding-right: 15px;
-  }
-  #nosotros-segundo #imagen2 {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (min-width: 576px) and (max-width: 1045px) {
-  h3 {
-    font-size: 25px;
-    padding-left: 50px;
-  }
-  #nosotros-primero {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   #nosotros-primero p {
     width: auto;
-    font-size: auto;
-    padding-right: 15px;
+    height: auto;
+    font-size: 12px;
   }
   #nosotros-primero #imagen1 {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+  }
+  #nosotros-primero #imagen1 .familia-amapola {
+    width: 150px;
+    height: 150px;
   }
   #nosotros-segundo {
-    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
   #nosotros-segundo p {
     width: auto;
-    font-size: auto;
-    padding-right: 15px;
+    height: auto;
+    font-size: 12px;
   }
   #nosotros-segundo #imagen2 {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+  }
+  #nosotros-segundo #imagen2 .familia-amapola {
+    width: 150px;
+    height: 150px;
   }
 }
 .main-login {
-  height: 400px;
+  height: auto;
   margin-top: 25px;
-  background-image: url("../img/fondo sobre nosotros 3.jpg");
-  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-  background-position: center; /* Centra la imagen en el fondo */
+  background-image: url("../../../img/fondo sobre nosotros 2.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 0%;
+  padding: 20px;
 }
-.main-login #form-login fieldset {
-  width: 300px;
-  height: 500px;
-  padding-top: 10px;
-  margin-left: 25px;
-  background-color: color-fondo;
+.main-login .registro {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #5B8C5A;
 }
-.main-login #form-login fieldset .boton {
-  margin-top: 15px;
-  margin-bottom: 15px;
+.main-login .registro h2 {
+  margin-top: 0;
+  text-align: center;
 }
-.main-login #form-login fieldset .iniciar-sesion {
-  font-weight: 500;
+.main-login .registro label, .main-login .registro input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.main-login .registro div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-login .registro button {
+  border-radius: 15px;
+  background-color: #e8871e;
+  font-weight: 600;
+  color: white;
+  border-color: black;
+  border: 1px solid;
+  height: 35px;
+  padding-top: 7px;
+  margin-top: 13px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  transition: all 1s;
+  border: white solid 1px;
 }
 
 /*# sourceMappingURL=styles.css.map */

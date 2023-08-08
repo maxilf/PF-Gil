@@ -1,0 +1,45 @@
+.main-login{
+    height: auto;
+    margin-top: 25px;
+    background-image: url("../../../img/fondo\ sobre\ nosotros\ 2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0%;
+    padding: 20px;
+    // background-color: #e8871eff;
+    
+
+    .registro {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #5B8C5A;
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+          }
+        
+        label, input {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 17px;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        button {
+            @include boton-color-align(white, $main-color);
+            border: white solid 1px;
+            
+          }
+          
+      }
+}
+

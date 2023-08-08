@@ -1,0 +1,32 @@
+#main-comprar{
+        background-color:  $color-fondo;
+        height: auto;
+    #tarjetas{
+        background-color: $color-fondo;
+            .card-comprar{
+                width: 55px;
+                height: 35px;
+            }
+    }
+    .card{
+        margin: 15px;
+    }
+        .card-img, .card-img-top {
+            height: 250px;
+            width: 250px;
+            padding-top: 5px;
+        }
+        .card-body{
+            justify-content: center;
+        }
+
+}  
+.filtro{
+    border-radius: 3px;
+    padding-top: 3px;
+    background-color: #bad4aaff;
+    width: 180px;
+    position: absolute;
+    position: relative;
+    left: 850px;
+}
