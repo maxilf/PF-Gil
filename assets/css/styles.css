@@ -164,14 +164,15 @@ main #cards .card img {
   align-items: center;
 }
 main #cards .card .card-texto {
-  margin-top: 10px;
+  margin-top: 12px;
   width: auto;
 }
 main #cards .card .card-texto h3 {
-  font-size: 18px;
+  font-size: 25px;
   margin: 0;
   padding: 5px;
   text-align: center;
+  font-family: letrah1;
 }
 main #cards .card .card-texto h3:hover {
   text-decoration: underline;
@@ -510,44 +511,44 @@ footer .derechos {
 }
 
 @media (max-width: 576px) {
-  h3 {
+  .main-sobre h3 {
     font-family: letrah1;
     font-size: 30px;
     padding-top: 10px;
   }
-  #nosotros-primero {
+  .main-sobre #nosotros-primero {
     height: auto;
     display: flex;
     flex-direction: column;
   }
-  #nosotros-primero p {
+  .main-sobre #nosotros-primero p {
     width: auto;
     height: auto;
     font-size: 12px;
   }
-  #nosotros-primero #imagen1 {
+  .main-sobre #nosotros-primero #imagen1 {
     width: 150px;
     height: 150px;
   }
-  #nosotros-primero #imagen1 .familia-amapola {
+  .main-sobre #nosotros-primero #imagen1 .familia-amapola {
     width: 150px;
     height: 150px;
   }
-  #nosotros-segundo {
+  .main-sobre #nosotros-segundo {
     height: auto;
     display: flex;
     flex-direction: column;
   }
-  #nosotros-segundo p {
+  .main-sobre #nosotros-segundo p {
     width: auto;
     height: auto;
     font-size: 12px;
   }
-  #nosotros-segundo #imagen2 {
+  .main-sobre #nosotros-segundo #imagen2 {
     width: 150px;
     height: 150px;
   }
-  #nosotros-segundo #imagen2 .familia-amapola {
+  .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
     width: 150px;
     height: 150px;
   }
