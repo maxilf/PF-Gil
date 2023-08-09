@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- METAS -->
+    <meta name="description" content="Realiza la compra con cualquier medio de pago- Envios gratis a domicilio, dentro de Las Flores">
+    <meta name="keywords" content="Compra, medios de pagos, tarjetas, debito, credito, envios">
+    <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- HOJA DE ESTILO -->
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/estilo.css">
-    <title>Amapola</title>
+    
+    <title>Dietética Amapola-Compra desde cualquier parte del país</title>
     <!-- LINK GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-
     <!-- LOGO CON FLAVICON -->
     <link rel="icon" href="../assets/img/fotor_2023-6-11_12_23_36 (2).ico">
-
-    <!-- AGREGO ESTE COMENTARIO PARA PRACTICAR GIT -->
 
 </head>
 <body>
@@ -33,20 +34,20 @@
         <!-- ENLACES A DEMAS HTML -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary.bg-white d-flex justify-content-center align-items-start w-60">
             <div class="container-fluid">
-            <a class="navbar-brand" href="./login.html">Login</a>
+            <a class="navbar-brand" href="./registrate.html">REGISTRATE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./comprar.html">Comprar</a>
+                    <a class="nav-link" href="./comprar.html">COMPRAR</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                    <a class="nav-link" href="./sobre_nosotros.html">SOBRE NOSOTROS</a>
                 </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -62,7 +63,7 @@
     </header>
     
     <main id="main-comprar">
-        <div id="tarjetas" class="container">
+        <div id="tarjetas" class="container-fluid">
             <div class="row">
                 <div class="col-md-6 offset-md-6">
                     <label for="filtro">Filtrar..</label>  
@@ -75,10 +76,46 @@
                     </select>
                 </div>
             </div>
-
-            
+            <br>
+            <br>
+                        
             <!-- TARJETAS PRODUCTOS -->
-            <div class="row"></div>  
+            <div class="row d-flex justify-content-center">
+                <div class="card col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img src="../assets/img/mani king.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta de mani</h5>
+                        <p class="card-text">Pasta de mani de 600cc, sin azucar agregada</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img src="../assets/img/la tranquilina.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mermelada La Tranquilina</h5>
+                        <p class="card-text">Mermelada Premium sin azucar, con stevia.</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img src="../assets/img/risky-dit.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tostadas de arroz</h5>
+                        <p class="card-text">Tostadas sin sal agregada</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card col-md-6 col-lg-3 card" style="width: 18rem;">
+                    <img src="../assets/img/not chicken.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Milnesa Not Chicken</h5>
+                    <p class="card-text">Milanesa vegetal simil pollo</p>
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                </div>  
+            </div>    
+            <!-- <div class="row"></div>  
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-6 col-lg-3 card">
                         <img src="../assets/img/la tranquilina.webp" alt="Imagen">
@@ -112,38 +149,46 @@
                         <a href="">Agregar al carrito</a>
                     </div>
                 </div>
-            </div> 
+            </div>  -->
         </div>     
     </main>
 
     <footer>
         <div class="footer">
             <!-- IMAGEN LOGO DIETETICA -->
-            <img class="logo"  src="../assets/img/fotor_2023-6-11_12_23_36.png" alt="Logo de la dietetica">
+            <a href="../index.html">
+                <img src="../assets/img/fotor_2023-6-11_12_23_36.png" class="logo-principal" alt="logo de la dietetica">
+            </a>
 
             <!-- ENLACES A DEMAS HTML -->
             <nav id="navegador">
                 <ul>
                     <li class="lista">
-                        <a href="./login.html">Login</a>
+                        <a href="./pages/login.html">REGISTRATE</a>
                     </li>
                     <li class="lista">
-                        <a href="./comprar.html">Comprar</a>
+                        <a href="./pages/comprar.html">COMPRAR</a>
                     </li>
                     <li class="lista">
-                        <a href="./contacto.html">Contacto</a>
+                        <a href="./pages/contacto.html">CONTACTO</a>
                     </li>
                     <li class="lista">
-                        <a href="./sobre_nosotros.html">Sobre nosotros</a>
+                        <a href="./pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
                     </li>
                 </ul>
             </nav>
 
             <!-- ICONOS REDES SOCIALES -->
             <div class="iconos-redes">
-                <img src="../assets/img/square-facebook.svg" class="redes-icono" alt="">
-                <img src="../assets/img/instagram.svg" class="redes-icono" alt="">
-                <img src="../assets/img/whatsapp.svg" class="redes-icono" alt="">
+                <a href="https://www.instagram.com/amapola_dietetica_/" target="_blank">
+                  <i class="fa-brands fa-instagram .redes-icono"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-facebook .redes-icono"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                  <i class="fa-brands fa-whatsapp .redes-icono"></i>
+                </a>
             </div>
 
         </div>
@@ -154,7 +199,7 @@
     </footer>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/d4c9ddae2d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
