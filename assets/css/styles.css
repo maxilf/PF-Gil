@@ -254,20 +254,25 @@ footer .derechos {
 }
 
 @media (max-width: 576px) {
+  #cabecera .logo-principal {
+    width: 85px;
+    height: 85px;
+    padding: 15px;
+  }
   main .div-h1 h1 {
     height: auto;
-    top: 1px;
+    top: 3px;
     font-size: 30px;
     padding-top: 10px;
   }
   main section h4 {
-    font-size: 17px;
+    font-size: 13px;
   }
   main article h2 {
-    font-size: 25px;
+    font-size: 13px;
   }
   main article h4 {
-    font-size: 15px;
+    font-size: 10px;
   }
   .me-2 {
     width: 100px;
@@ -335,6 +340,11 @@ footer .derechos {
   }
 }
 @media (min-width: 576px) and (max-width: 848px) {
+  #cabecera .logo-principal {
+    width: 90px;
+    height: 90px;
+    padding: 15;
+  }
   .navbar {
     width: auto;
   }
@@ -342,16 +352,16 @@ footer .derechos {
     height: auto;
     top: 1px;
     font-size: 40px;
-    padding-top: 10px;
+    padding-top: 15px;
   }
   main section h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   main article h2 {
-    font-size: 15px;
+    font-size: 17px;
   }
   main article h4 {
-    font-size: 10px;
+    font-size: 12px;
   }
   footer .footer {
     width: 100%;
