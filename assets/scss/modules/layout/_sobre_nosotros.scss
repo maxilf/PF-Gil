@@ -4,11 +4,11 @@
 
     .main-sobre{
         width: auto;
-        background-image: url('../../../img/fondo\ sobre\ nosotros\ 3.webp');
+        background-image: url('../img/fondo\ sobre\ nosotros\ 3.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: gray;
+        background-color: $color-fondo;
         
         h3{
             font-family: letrah1;
@@ -23,7 +23,6 @@
             flex-direction: row;
             justify-content: center;
             margin-top: 20px;
-
             p{
                 width: 650px;
                 height: 320px;
@@ -31,6 +30,7 @@
                 font-size: 17px;
                 font-weight: 400;
                 margin-right: 15px;
+                padding-top: 10px;
             }
             #imagen1{
                 width: 320px;
@@ -50,17 +50,18 @@
         #nosotros-segundo{
             width: 100%;
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             justify-content: center;
             margin-top: 20px;
-            margin-bottom: 25px;
+            padding-bottom: 25px;
 
             p{
                 width: 650px;
+                height: 320px;
                 text-align: justify;
                 font-size: 17px;
                 font-weight: 400;
-                margin-left: 15px;
+                margin-right: 15px;
             }
             #imagen2{
                 width: 320px;
@@ -85,27 +86,41 @@
 
 
 @media (max-width: 576px){     
-    .main-sobre{   
+    .main-sobre{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 1200px;
+
         h3{
-            font-family: letrah1;
             font-size: 30px;
-            padding-top: 10px;
+            padding-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0px;
         }
         #nosotros-primero{
             height: auto;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
             p{
-                width: auto;
+                width: 450px;
                 height: auto;
                 font-size: 12px;
+                justify-content: center;
+                margin: 10px;
             }
             #imagen1{
-                width: 150px;
-                height: 150px;
+                width: 300px;
+                height: 300px;
+                justify-content: center;
                 .familia-amapola{
-                    width: 150px;
-                    height: 150px;
+                    width: 300px;
+                    height: 300px;
+                    justify-content: center;
                 }
             }
         }
@@ -113,58 +128,89 @@
             height: auto;
             display: flex;
             flex-direction: column;
-
+            align-items: center;
             p{
-                width: auto;
+                width: 450px;
                 height: auto;
                 font-size: 12px;
+                justify-content: center;
+                margin: 10px;
             }
             #imagen2{
-                width: 150px;
-                height: 150px;
+                width: 300px;
+                height: 300px;
+                justify-content: center;
                 .familia-amapola{
-                    width: 150px;
-                    height: 150px;
+                    width: 300px;
+                    height: 300px;
+                    justify-content: center;
                 }
             }
         }
-    }}
-    
+    }
+}
 
 
-// @media (min-width: 576px) and (max-width: 1045px){
-//     h3{
-//         font-size: 25px;
-//         padding-left: 50px;
-//     }
+@media (min-width: 576px) and (max-width: 1045px){
+    .main-sobre{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 1600px;
 
-//     #nosotros-primero{
-//         width: 100%;
-
-//         p{
-//             width: auto;
-//             font-size: auto;
-//             padding-right: 15px;
-//         }
-//         #imagen1{
-//             width: 100%;
-//             height: auto;
-
-//         }
-//     }
-//     #nosotros-segundo{
-//         width: 100%;
-
-//         p{
-//             width: auto;
-//             font-size: auto;
-//             padding-right: 15px;
-//         }
-//         #imagen2{
-//             width: 100%;
-//             height: auto;
-
-//         }
-//     }
-
-
+    h3{
+        font-size: 40px;
+        padding-top: 5px;
+        padding-left: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nosotros-primero{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        p{
+            width: 450px;
+            height: auto;
+            font-size: 15px;
+            justify-content: center;
+            margin: 10px;
+        }
+        #imagen1{
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            .familia-amapola{
+                width: 400px;
+                height: 400px;
+                justify-content: center;
+            }
+        }
+    }
+    #nosotros-segundo{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            width: 450px;
+            height: auto;
+            font-size: 15px;
+            justify-content: center;
+            margin: 10px;
+        }
+        #imagen2{
+            width: 400px;
+            height: 400px;
+            justify-content: center;
+            .familia-amapola{
+                width: 400px;
+                height: 400px;
+                justify-content: center;
+            }
+        }
+    }
+}}

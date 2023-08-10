@@ -47,6 +47,9 @@ body {
   font-weight: 600;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
+#cabecera .navbar {
+  width: auto;
+}
 #cabecera .nav-link {
   margin-left: 3px;
   margin-right: 3px;
@@ -99,11 +102,6 @@ main .div-h1 h1 {
   font-size: 50px;
   padding-top: 20px;
   transition: 3s;
-}
-@media (max-width: 576px) {
-  main .div-h1 h1 {
-    font-size: 35px;
-  }
 }
 main .div-h1 :hover {
   height: 150px;
@@ -257,31 +255,71 @@ footer .derechos {
 
 @media (max-width: 576px) {
   main .div-h1 h1 {
-    font-size: 35px;
+    height: auto;
+    top: 1px;
+    font-size: 30px;
+    padding-top: 10px;
   }
-  .footer {
-    width: auto;
+  main section h4 {
+    font-size: 17px;
   }
-  footer .footer .logo {
+  main article h2 {
+    font-size: 25px;
+  }
+  main article h4 {
+    font-size: 15px;
+  }
+  .me-2 {
+    width: 100px;
+  }
+  footer .footer {
+    width: 100%;
+  }
+  footer .footer .logo-principal {
     width: 60px;
     height: 60px;
     padding: 5px;
+    margin-left: 7px;
+  }
+  footer .footer #navegador {
+    padding: 5px;
   }
   footer .footer #navegador ul {
-    width: 320px;
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0px;
+  }
+  footer .footer #navegador ul .lista {
+    list-style: none;
+    text-decoration: none;
   }
   footer .footer #navegador ul .lista a {
     font-size: 11px;
   }
+  footer .footer #navegador ul .lista a:hover {
+    color: gray;
+    text-decoration: underline;
+  }
   footer .footer .iconos-redes {
     width: 95px;
     height: 40px;
-    padding: 5px;
+    padding: 10px;
   }
-  footer .footer .iconos-redes .redes-icono {
-    max-width: 18px;
-    height: auto;
-    margin-right: 5px;
+  footer .footer .iconos-redes .fa-brands, footer .footer .iconos-redes .fab {
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    margin-right: 12px;
+  }
+  footer .footer .iconos-redes .fa-brands:hover, footer .footer .iconos-redes .fab:hover {
+    transform: scale(1.1);
+  }
+  footer .derechos {
+    font-size: 11px;
+    height: 25px;
   }
   main #cards {
     display: flex;
@@ -297,38 +335,81 @@ footer .derechos {
   }
 }
 @media (min-width: 576px) and (max-width: 848px) {
-  main .div-h1 h1 {
-    font-size: 40px;
-  }
-  .footer {
+  .navbar {
     width: auto;
   }
-  footer .footer .logo {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
+  main .div-h1 h1 {
+    height: auto;
+    top: 1px;
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  main section h4 {
+    font-size: 20px;
+  }
+  main article h2 {
+    font-size: 15px;
+  }
+  main article h4 {
+    font-size: 10px;
+  }
+  footer .footer {
+    width: 100%;
+  }
+  footer .footer .logo-principal {
+    width: 90px;
+    height: 90px;
+    padding: 7px;
+    margin-left: 10px;
+  }
+  footer .footer #navegador {
+    padding: 5px;
   }
   footer .footer #navegador ul {
-    width: 380px;
+    width: 350px;
+    margin-top: 15px;
+    padding: 0px;
+  }
+  footer .footer #navegador ul .lista {
+    list-style: none;
+    text-decoration: none;
   }
   footer .footer #navegador ul .lista a {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  footer .footer #navegador ul .lista a:hover {
+    color: gray;
+    text-decoration: underline;
   }
   footer .footer .iconos-redes {
-    width: 120px;
-    height: 45px;
-    padding: 8px;
+    width: 110px;
+    height: 50px;
+    padding: 10px;
   }
-  footer .footer .iconos-redes .redes-icono {
-    max-width: 20px;
+  footer .footer .iconos-redes .fa-brands, footer .footer .iconos-redes .fab {
+    font-weight: 200;
+    font-size: 25px;
+    color: white;
+    margin-right: 14px;
+  }
+  footer .footer .iconos-redes .fa-brands:hover, footer .footer .iconos-redes .fab:hover {
+    transform: scale(1.1);
+  }
+  footer .derechos {
+    font-size: 15px;
+    height: 30px;
+  }
+  main #cards {
+    display: flex;
+    justify-content: space-around;
     height: auto;
-    margin-right: 8px;
+    margin: 20px;
   }
   main #cards {
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin: 10px;
+    margin: 5px;
   }
 }
 .formulario {
@@ -341,11 +422,11 @@ footer .derechos {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  /* Imagen de fondo para el formulario */
-  background-image: url("../img/fondo formulario.jpg");
-  background-size: auto; /* Ajusta la imagen para cubrir todo el fondo */
-  background-position: center; /* Centra la imagen en el fondo */
+  background-image: url("../img/fondo_formulario.webp");
+  background-size: auto;
+  background-position: center;
   background-repeat: no-repeat;
+  background-color: #ebf5df;
 }
 .formulario #tituloContacto {
   font-family: sans-serif;
@@ -437,11 +518,11 @@ footer .derechos {
 
 .main-sobre {
   width: auto;
-  background-image: url("../../../img/fondo sobre nosotros 3.webp");
+  background-image: url("../img/fondo sobre nosotros 3.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: gray;
+  background-color: #ebf5df;
 }
 .main-sobre h3 {
   font-family: letrah1;
@@ -463,6 +544,7 @@ footer .derechos {
   font-size: 17px;
   font-weight: 400;
   margin-right: 15px;
+  padding-top: 10px;
 }
 .main-sobre #nosotros-primero #imagen1 {
   width: 320px;
@@ -480,17 +562,18 @@ footer .derechos {
 .main-sobre #nosotros-segundo {
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 .main-sobre #nosotros-segundo p {
   width: 650px;
+  height: 320px;
   text-align: justify;
   font-size: 17px;
   font-weight: 400;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .main-sobre #nosotros-segundo #imagen2 {
   width: 320px;
@@ -511,52 +594,135 @@ footer .derechos {
 }
 
 @media (max-width: 576px) {
+  .main-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1200px;
+  }
   .main-sobre h3 {
-    font-family: letrah1;
     font-size: 30px;
-    padding-top: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
   }
   .main-sobre #nosotros-primero {
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
   }
   .main-sobre #nosotros-primero p {
-    width: auto;
+    width: 450px;
     height: auto;
     font-size: 12px;
+    justify-content: center;
+    margin: 10px;
   }
   .main-sobre #nosotros-primero #imagen1 {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
   }
   .main-sobre #nosotros-primero #imagen1 .familia-amapola {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
   }
   .main-sobre #nosotros-segundo {
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .main-sobre #nosotros-segundo p {
-    width: auto;
+    width: 450px;
     height: auto;
     font-size: 12px;
+    justify-content: center;
+    margin: 10px;
   }
   .main-sobre #nosotros-segundo #imagen2 {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
   }
   .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 1045px) {
+  .main-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1600px;
+  }
+  .main-sobre h3 {
+    font-size: 40px;
+    padding-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-sobre #nosotros-primero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .main-sobre #nosotros-primero p {
+    width: 450px;
+    height: auto;
+    font-size: 15px;
+    justify-content: center;
+    margin: 10px;
+  }
+  .main-sobre #nosotros-primero #imagen1 {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+  }
+  .main-sobre #nosotros-primero #imagen1 .familia-amapola {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+  }
+  .main-sobre #nosotros-segundo {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-sobre #nosotros-segundo p {
+    width: 450px;
+    height: auto;
+    font-size: 15px;
+    justify-content: center;
+    margin: 10px;
+  }
+  .main-sobre #nosotros-segundo #imagen2 {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+  }
+  .main-sobre #nosotros-segundo #imagen2 .familia-amapola {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
   }
 }
 .main-login {
   height: auto;
   margin-top: 25px;
-  background-image: url("../../../img/fondo sobre nosotros 2.jpg");
+  background-image: url("../img/fondo_formulario.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
